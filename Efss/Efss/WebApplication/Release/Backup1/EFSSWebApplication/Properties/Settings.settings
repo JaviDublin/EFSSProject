@@ -1,0 +1,168 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="APP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplicationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EFSS</Value>
+    </Setting>
+    <Setting Name="SupportEmailAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">jmartinezpavon@hertz.com</Value>
+    </Setting>
+    <Setting Name="ApplicationEmailAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">itservicedesk@hertz.com</Value>
+    </Setting>
+    <Setting Name="ApplicationStartYear" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2011</Value>
+    </Setting>
+    <Setting Name="ApplicationReportServerFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/hefs/</Value>
+    </Setting>
+    <Setting Name="HelpDesk" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">itservicedesk@hertz.com</Value>
+    </Setting>
+    <Setting Name="ManualInvoicesPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Manual Invoices\Serials.xlsx</Value>
+    </Setting>
+    <Setting Name="ManualInvoicesPathFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Manual Invoices\</Value>
+    </Setting>
+    <Setting Name="FleetCashTargetPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Fleet Cash\Cash_Targets.xlsx</Value>
+    </Setting>
+    <Setting Name="FleetCashTargetPathFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Fleet Cash\</Value>
+    </Setting>
+    <Setting Name="InvoiceUK" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceUK</Value>
+    </Setting>
+    <Setting Name="InvoiceBE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceBE</Value>
+    </Setting>
+    <Setting Name="InvoiceSZ" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceSZ</Value>
+    </Setting>
+    <Setting Name="InvoiceGE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceGE</Value>
+    </Setting>
+    <Setting Name="InvoiceNE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceNE</Value>
+    </Setting>
+    <Setting Name="InvoiceFR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceFR</Value>
+    </Setting>
+    <Setting Name="InvoiceLU" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceLU</Value>
+    </Setting>
+    <Setting Name="InvoiceSP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceSP</Value>
+    </Setting>
+    <Setting Name="InvoiceIT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceIT</Value>
+    </Setting>
+    <Setting Name="FleetCashTargetPath97" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Fleet Cash\CashTargets.xls</Value>
+    </Setting>
+    <Setting Name="ReportFleetCashReport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReportFleetCash</Value>
+    </Setting>
+    <Setting Name="ReportDashboard" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReportDashboard</Value>
+    </Setting>
+    <Setting Name="TaxFileSP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Tax Files\20130883247200038897[1].020811.NRC.1.DEV</Value>
+    </Setting>
+    <Setting Name="EmailVBScript" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/App_Files/SendEmail.vbs</Value>
+    </Setting>
+    <Setting Name="MatriculationPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\Tax Files\MATRICULACIONES-IM PARA GFLOTA.xlsx</Value>
+    </Setting>
+    <Setting Name="AttachmentExcelPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/App_Files/EmailAttachments/InvoicesExcel.xls</Value>
+    </Setting>
+    <Setting Name="AttachmentPDFPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/App_Files/EmailAttachments/InvoicesPDF.pdf</Value>
+    </Setting>
+    <Setting Name="InvoiceNETransport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceNETransport</Value>
+    </Setting>
+    <Setting Name="AttacmentsNETransport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/App_Files/EmailAttachments/InvoiceTransport.pdf</Value>
+    </Setting>
+    <Setting Name="EmailAttachmentsPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/App_Files/EmailAttachments/</Value>
+    </Setting>
+    <Setting Name="FileNameExcelAttachment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoicesExcel.xls</Value>
+    </Setting>
+    <Setting Name="FileNamePDFAttachment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoicesPDF.pdf</Value>
+    </Setting>
+    <Setting Name="FileNamePDFTransport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceTransport.pdf</Value>
+    </Setting>
+    <Setting Name="FTP_Filename" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\FTP Client\FTP_Me.bat</Value>
+    </Setting>
+    <Setting Name="FTP_Script" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FTP_Script.txt</Value>
+    </Setting>
+    <Setting Name="FTP_Script_FileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\FTP Client\FTP_Script.txt</Value>
+    </Setting>
+    <Setting Name="FTP_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\Downloads\FTP Client\</Value>
+    </Setting>
+    <Setting Name="FTP_EFSS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescft02\D$\FleetVisionImport</Value>
+    </Setting>
+    <Setting Name="FTP_Files_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescfs05\Finance\Financial Operations\Fleet Accounting\EFSS FTP Files\Upload\</Value>
+    </Setting>
+    <Setting Name="SalesFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sales.txt</Value>
+    </Setting>
+    <Setting Name="BuyersFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Buyers.txt</Value>
+    </Setting>
+    <Setting Name="ModelsFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Models.txt</Value>
+    </Setting>
+    <Setting Name="DashboardFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Dashboard.txt</Value>
+    </Setting>
+    <Setting Name="FleetDayFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FleetDay.txt</Value>
+    </Setting>
+    <Setting Name="FleetMonthFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FleetMonth.txt</Value>
+    </Setting>
+    <Setting Name="YearAddsFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">YearAdds.txt</Value>
+    </Setting>
+    <Setting Name="DayAddsFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DayAdds.txt</Value>
+    </Setting>
+    <Setting Name="YearDelsFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">YearDels.txt</Value>
+    </Setting>
+    <Setting Name="DayDelsFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DayDels.txt</Value>
+    </Setting>
+    <Setting Name="FTPFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescft02\FleetVisionImport\</Value>
+    </Setting>
+    <Setting Name="DTSSales" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\hescrad2\i$\EuropeanFleetSalesSystem\SSIS packages repository\EFSS\ImportSales.dtsx</Value>
+    </Setting>
+    <Setting Name="CreditNotesFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CreditNotes.txt</Value>
+    </Setting>
+    <Setting Name="ReportServerRadReports" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://radreports.hertz.com/ReportServer</Value>
+    </Setting>
+    <Setting Name="ReportFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/EFSS-Reports/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

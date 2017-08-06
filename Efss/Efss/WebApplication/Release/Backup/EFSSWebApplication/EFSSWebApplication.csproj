@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4117D5B1-9CF9-4CBD-99E0-77D63ABB65B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APP</RootNamespace>
+    <AssemblyName>HEFS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50508.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="RAD, Version=1.1.0.8, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Files\ANSI.txt" />
+    <Content Include="App_Images\accept.png" />
+    <Content Include="App_Images\add.png" />
+    <Content Include="App_Images\application-logo.gif" />
+    <Content Include="App_Images\application-logo.png" />
+    <Content Include="App_Images\Application\21.png" />
+    <Content Include="App_Images\Application\back.png" />
+    <Content Include="App_Images\Application\back_on.png" />
+    <Content Include="App_Images\Application\brushed_metal.png" />
+    <Content Include="App_Images\Application\bulletgrey.png" />
+    <Content Include="App_Images\Application\bulletindex.png" />
+    <Content Include="App_Images\Application\file.png" />
+    <Content Include="App_Images\Application\file_on.png" />
+    <Content Include="App_Images\Application\folder.png" />
+    <Content Include="App_Images\Application\forward.png" />
+    <Content Include="App_Images\Application\forward_on.png" />
+    <Content Include="App_Images\Application\loading-small.gif" />
+    <Content Include="App_Images\Application\loading.gif" />
+    <Content Include="App_Images\Application\MacOSXAqua_012.png" />
+    <Content Include="App_Images\Application\simple.gif" />
+    <Content Include="App_Images\arrow-collapse.gif" />
+    <Content Include="App_Images\arrow-expand.gif" />
+    <Content Include="App_Images\Back_Button_32.png" />
+    <Content Include="App_Images\blank.gif" />
+    <Content Include="App_Images\blank.png" />
+    <Content Include="App_Images\building.png" />
+    <Content Include="App_Images\calendar-bgr.gif" />
+    <Content Include="App_Images\calendar.png" />
+    <Content Include="App_Images\cancel.png" />
+    <Content Include="App_Images\car.png" />
+    <Content Include="App_Images\chart_pie.png" />
+    <Content Include="App_Images\checkbox-checked.png" />
+    <Content Include="App_Images\checkbox-unchecked.png" />
+    <Content Include="App_Images\Command-Edit.gif" />
+    <Content Include="App_Images\Command-Insert.png" />
+    <Content Include="App_Images\Command-Preview.png" />
+    <Content Include="App_Images\Commands\RibbonAddDelete.png" />
+    <Content Include="App_Images\Commands\RibbonAddDeleteMonth.png" />
+    <Content Include="App_Images\Commands\RibbonAgencia.png" />
+    <Content Include="App_Images\Commands\RibbonAreas.png" />
+    <Content Include="App_Images\Commands\RibbonBuyers.png" />
+    <Content Include="App_Images\Commands\RibbonCaixa.png" />
+    <Content Include="App_Images\Commands\RibbonCompanies.png" />
+    <Content Include="App_Images\Commands\RibbonDashboardEdit.png" />
+    <Content Include="App_Images\Commands\RibbonDashboardReport.png" />
+    <Content Include="App_Images\Commands\RibbonEmail.png" />
+    <Content Include="App_Images\Commands\RibbonFilesReport.png" />
+    <Content Include="App_Images\Commands\RibbonFleetCash.png" />
+    <Content Include="App_Images\Commands\RibbonFleetDay.png" />
+    <Content Include="App_Images\Commands\RibbonFleetMonth.png" />
+    <Content Include="App_Images\Commands\RibbonFleetSearchEngine.png" />
+    <Content Include="App_Images\Commands\RibbonFranceFile.png" />
+    <Content Include="App_Images\Commands\RibbonHertz.png" />
+    <Content Include="App_Images\Commands\RibbonInvoicesWrong.png" />
+    <Content Include="App_Images\Commands\RibbonManualInvoces.png" />
+    <Content Include="App_Images\Commands\RibbonModels.png" />
+    <Content Include="App_Images\Commands\RibbonPrintInvoices.png" />
+    <Content Include="App_Images\Commands\RibbonReport.png" />
+    <Content Include="App_Images\Commands\RibbonSearchEngine.png" />
+    <Content Include="App_Images\Commands\RibbonSettings.png" />
+    <Content Include="App_Images\Commands\RibbonSpainTax.png" />
+    <Content Include="App_Images\Commands\RibbonStats.png" />
+    <Content Include="App_Images\Commands\RibbonUsers.png" />
+    <Content Include="App_Images\control-accounts.gif" />
+    <Content Include="App_Images\control-blank.png" />
+    <Content Include="App_Images\control-datatransfer.gif" />
+    <Content Include="App_Images\control-home.gif" />
+    <Content Include="App_Images\control-information.gif" />
+    <Content Include="App_Images\control-levelpricing.gif" />
+    <Content Include="App_Images\control-mis.gif" />
+    <Content Include="App_Images\control-proposals.gif" />
+    <Content Include="App_Images\control-reports.gif" />
+    <Content Include="App_Images\control-security.gif" />
+    <Content Include="App_Images\control-settings.gif" />
+    <Content Include="App_Images\control-termsconditions.gif" />
+    <Content Include="App_Images\creditcards.png" />
+    <Content Include="App_Images\dropdown-accounts.gif" />
+    <Content Include="App_Images\dropdown-levelpricing.gif" />
+    <Content Include="App_Images\dropdown-proposals.gif" />
+    <Content Include="App_Images\dropdown-termsconditions.gif" />
+    <Content Include="App_Images\dropdown-users.gif" />
+    <Content Include="App_Images\EFSSLogo.png" />
+    <Content Include="App_Images\email.png" />
+    <Content Include="App_Images\error.png" />
+    <Content Include="App_Images\exclamation.jpg" />
+    <Content Include="App_Images\favicon.ico" />
+    <Content Include="App_Images\folder.png" />
+    <Content Include="App_Images\FormImages\DashboardReportTitle.png" />
+    <Content Include="App_Images\FormImages\FormBackground1.png" />
+    <Content Include="App_Images\FormImages\FormBackground4.png" />
+    <Content Include="App_Images\help.gif" />
+    <Content Include="App_Images\hertz-logo.jpg" />
+    <Content Include="App_Images\IcoAgencia.png" />
+    <Content Include="App_Images\IcoLaCaixa.png" />
+    <Content Include="App_Images\information.png" />
+    <Content Include="App_Images\input.png" />
+    <Content Include="App_Images\key.png" />
+    <Content Include="App_Images\listview-hover.gif" />
+    <Content Include="App_Images\loading-small.gif" />
+    <Content Include="App_Images\loading.gif" />
+    <Content Include="App_Images\logout.gif" />
+    <Content Include="App_Images\magnifier.png" />
+    <Content Include="App_Images\map.png" />
+    <Content Include="App_Images\menu-collapse.png" />
+    <Content Include="App_Images\menu-expand.png" />
+    <Content Include="App_Images\minus.png" />
+    <Content Include="App_Images\modal-close.gif" />
+    <Content Include="App_Images\modal_header_bg.gif" />
+    <Content Include="App_Images\money.png" />
+    <Content Include="App_Images\no.gif" />
+    <Content Include="App_Images\pager-first.png" />
+    <Content Include="App_Images\pager-last.png" />
+    <Content Include="App_Images\pager-next.png" />
+    <Content Include="App_Images\pager-previous.png" />
+    <Content Include="App_Images\page_add.png" />
+    <Content Include="App_Images\page_excel.png" />
+    <Content Include="App_Images\page_go.png" />
+    <Content Include="App_Images\page_white_acrobat.png" />
+    <Content Include="App_Images\page_white_get.png" />
+    <Content Include="App_Images\page_white_medal.png" />
+    <Content Include="App_Images\page_white_wrench.png" />
+    <Content Include="App_Images\paste_plain.png" />
+    <Content Include="App_Images\pencil.png" />
+    <Content Include="App_Images\plus.png" />
+    <Content Include="App_Images\PrintHS.png" />
+    <Content Include="App_Images\refresh.png" />
+    <Content Include="App_Images\resultset_previous.png" />
+    <Content Include="App_Images\saveHS.png" />
+    <Content Include="App_Images\shape_square_add.png" />
+    <Content Include="App_Images\shape_square_delete.png" />
+    <Content Include="App_Images\sort-ascending.gif" />
+    <Content Include="App_Images\sort-blank.gif" />
+    <Content Include="App_Images\sort-descending.gif" />
+    <Content Include="App_Images\tab-accounts.gif" />
+    <Content Include="App_Images\tab-activity.gif" />
+    <Content Include="App_Images\tab-car.gif" />
+    <Content Include="App_Images\tab-comments.gif" />
+    <Content Include="App_Images\tab-controls.gif" />
+    <Content Include="App_Images\tab-costbreak.gif" />
+    <Content Include="App_Images\tab-details.gif" />
+    <Content Include="App_Images\tab-insurance.gif" />
+    <Content Include="App_Images\tab-multiplier.gif" />
+    <Content Include="App_Images\tab-note.gif" />
+    <Content Include="App_Images\tab-proposals.gif" />
+    <Content Include="App_Images\tab-rates.gif" />
+    <Content Include="App_Images\tab-settings.gif" />
+    <Content Include="App_Images\tab-termsconditions.gif" />
+    <Content Include="App_Images\tab-users.gif" />
+    <Content Include="App_Images\tab-world.gif" />
+    <Content Include="App_Images\table.png" />
+    <Content Include="App_Images\Tabs\menu-bg-hover.gif" />
+    <Content Include="App_Images\Tabs\menu-bg-lrg.jpg" />
+    <Content Include="App_Images\Tabs\menu-bg.jpg" />
+    <Content Include="App_Images\Tabs\menu-left-bg.gif" />
+    <Content Include="App_Images\Tabs\tab-background.gif" />
+    <Content Include="App_Images\user_edit.png" />
+    <Content Include="App_Images\user_suit.png" />
+    <Content Include="App_Images\validation-checking.gif" />
+    <Content Include="App_Images\validation-error.gif" />
+    <Content Include="App_Images\validation-ok.gif" />
+    <Content Include="App_Images\world.png" />
+    <Content Include="App_Images\wrench.png" />
+    <Content Include="App_Images\yes.gif" />
+    <Content Include="App_MasterPages\Site.Master" />
+    <Content Include="App_References\Ajax ToolKit\AjaxControlToolkit.dll" />
+    <Content Include="App_References\Ajax ToolKit\AjaxControlToolkit.pdb" />
+    <Content Include="App_References\Ajax ToolKit\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\tr-TR\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Ajax ToolKit\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="App_References\Rad Library\RAD.dll" />
+    <Content Include="App_References\Rad Library\RAD.pdb" />
+    <Content Include="App_Scripts\Application.js" />
+    <Content Include="App_Scripts\jquery-1.5.1.js" />
+    <Content Include="App_Scripts\jquery-ui-1.8.11.custom.js" />
+    <Content Include="App_Styles\Application.css" />
+    <Content Include="App_Scripts\jquery.cookie.js" />
+    <Content Include="App_Scripts\jquery.bgiframe-2.1.2.js" />
+    <Content Include="App_Scripts\jquery.fixedheadertable.js" />
+    <Content Include="App_Styles\Controls.css" />
+    <Content Include="App_Styles\Core.css" />
+    <Content Include="App_Styles\Images\bgr-content-window.jpg" />
+    <Content Include="App_Styles\Images\column-header.gif" />
+    <Content Include="App_Styles\Images\combo-box.png" />
+    <Content Include="App_Styles\Images\content-header.gif" />
+    <Content Include="App_Styles\Images\control-header-bg-light.gif" />
+    <Content Include="App_Styles\Images\control-header-bg.gif" />
+    <Content Include="App_Styles\Images\control_menu_bg.gif" />
+    <Content Include="App_Styles\Images\control_menu_bg_hover.gif" />
+    <Content Include="App_Styles\Images\footer-bg.jpg" />
+    <Content Include="App_Styles\Images\footer-bg.png" />
+    <Content Include="App_Styles\Images\grd_head.png" />
+    <Content Include="App_Styles\Images\gridview_header_bg.gif" />
+    <Content Include="App_Styles\Images\header-bg-small.gif" />
+    <Content Include="App_Styles\Images\header-bg.gif" />
+    <Content Include="App_Styles\Images\header.gif" />
+    <Content Include="App_Styles\Images\hertz-logo.jpg" />
+    <Content Include="App_Styles\Images\login-bgr-bottom.gif" />
+    <Content Include="App_Styles\Images\login-bgr-middle.gif" />
+    <Content Include="App_Styles\Images\login-bgr-top.gif" />
+    <Content Include="App_Styles\Images\login-body-bg.png" />
+    <Content Include="App_Styles\Images\menu-bg-hover.gif" />
+    <Content Include="App_Styles\Images\menu-bg-lrg.jpg" />
+    <Content Include="App_Styles\Images\menu-bg.jpg" />
+    <Content Include="App_Styles\Images\menu-left-bg.gif" />
+    <Content Include="App_Styles\Images\menu_header_bg_narrow.gif" />
+    <Content Include="App_Styles\Images\menu_splitter_background.gif" />
+    <Content Include="App_Styles\Images\modal_header_bg.gif" />
+    <Content Include="App_Styles\Images\pager_bg.gif" />
+    <Content Include="App_Styles\Images\pager_bg_lrge.gif" />
+    <Content Include="App_Styles\Images\pod-background-bottom.png" />
+    <Content Include="App_Styles\Images\sort-ascending.gif" />
+    <Content Include="App_Styles\Images\sort-descending.gif" />
+    <Content Include="App_Styles\Images\tab-background.gif" />
+    <Content Include="App_Styles\Images\ui-anim_basic_16x16.gif" />
+    <Content Include="App_Styles\Images\ui-bg_diagonals-thick_0_fef500_40x40.png" />
+    <Content Include="App_Styles\Images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="App_Styles\Images\ui-bg_diagonals-thick_18_fef500_40x40.png" />
+    <Content Include="App_Styles\Images\ui-bg_diagonals-thick_20_fed22f_40x40.png" />
+    <Content Include="App_Styles\Images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_glass_100_dcdcdc_1x400.png" />
+    <Content Include="App_Styles\Images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="App_Styles\Images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="App_Styles\Images\ui-bg_glass_100_ffffff_1x400.png" />
+    <Content Include="App_Styles\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Styles\Images\ui-bg_gloss-wave_100_000000_500x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_gloss-wave_35_fef500_500x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_100_000000_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_100_d3d3d3_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_100_dcdcdc_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_100_ffffff_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_18_b81900_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_20_d3d3d3_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_20_fed22f_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_20_fffa96_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_75_fedd05_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_75_fef500_1x100.png" />
+    <Content Include="App_Styles\Images\ui-bg_highlight-soft_75_fffa96_1x100.png" />
+    <Content Include="App_Styles\Images\ui-icons_000000_256x240.png" />
+    <Content Include="App_Styles\Images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Styles\Images\ui-icons_228ef1_256x240.png" />
+    <Content Include="App_Styles\Images\ui-icons_fedd05_256x240.png" />
+    <Content Include="App_Styles\Images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="App_Styles\Images\ui-icons_fffa96_256x240.png" />
+    <Content Include="App_Styles\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Styles\Site.css" />
+    <Content Include="App_Styles\jquery-ui-1.8.11.css" />
+    <Content Include="App_UserControls\Controls\AccessDenied\AccessDenied.ascx" />
+    <Content Include="App_UserControls\Controls\Commands\ButtonCommand.ascx" />
+    <Content Include="App_UserControls\Controls\Dialogs\Loading.ascx" />
+    <Content Include="App_UserControls\Controls\EmptyDataTemplate.ascx" />
+    <Content Include="App_UserControls\Controls\Panel\NavigationPanel.ascx" />
+    <Content Include="App_UserControls\Fleet\FleetDetails\DayReport\FleetDayReport.ascx" />
+    <Content Include="App_UserControls\Fleet\FleetDetails\MonthReport\FleetMonthReport.ascx" />
+    <Content Include="App_UserControls\Fleet\ListViewDayManufacturer\ListViewDayManufacturer.ascx" />
+    <Content Include="App_UserControls\Fleet\ListViewDay\ListViewDay.ascx" />
+    <Content Include="App_UserControls\Fleet\ListViewYearManufacturer\ListViewYearManufacturer.ascx" />
+    <Content Include="App_UserControls\Fleet\ListViewYear\ListViewYear.ascx" />
+    <Content Include="App_UserControls\Fleet\PanelColumns\FleetPanelColumns.ascx" />
+    <Content Include="App_UserControls\Fleet\TransactionsDay.ascx" />
+    <Content Include="App_UserControls\Fleet\TransactionsYear.ascx" />
+    <Content Include="App_UserControls\Invoices\InvoicesForm.ascx" />
+    <Content Include="App_UserControls\Invoices\ListViews\Vendors\ListViewSalesBuyers.ascx" />
+    <Content Include="App_UserControls\Invoices\ListViews\Countries\ListViewSalesCountries.ascx" />
+    <Content Include="App_UserControls\Invoices\ListViews\Documents\ListViewSalesInvoices.ascx" />
+    <Content Include="App_UserControls\Invoices\SalesReport\SalesReport.ascx" />
+    <Content Include="App_UserControls\Invoices\Search\SearchEngine.ascx" />
+    <Content Include="App_UserControls\Reports\FleetCashForm.ascx" />
+    <Content Include="App_UserControls\Reports\FleetDashboardForm.ascx" />
+    <Content Include="App_UserControls\Reports\FormTaxSpain\FormTaxSpain.ascx" />
+    <Content Include="App_UserControls\Reports\FormTaxUpload\FileUploadTax.ascx" />
+    <Content Include="App_UserControls\Reports\FTP\FTPForm.ascx" />
+    <Content Include="App_UserControls\Reports\ListViewReports.ascx" />
+    <Content Include="App_UserControls\Reports\OutputFileFrance\FileFrance.ascx" />
+    <Content Include="App_UserControls\Reports\OutputFilesForm.ascx" />
+    <Content Include="App_UserControls\Reports\OutputFileSpain\FileSpain.ascx" />
+    <Content Include="App_UserControls\Reports\TaxSpain.ascx" />
+    <Content Include="App_UserControls\Settings\Forms\FormBuyers\SettingsFormBuyers.ascx" />
+    <Content Include="App_UserControls\Settings\Forms\FormCompanies\SettingsFormCompanies.ascx" />
+    <Content Include="App_UserControls\Settings\Forms\FormEmail\SettingsFormEmail.ascx" />
+    <Content Include="App_UserControls\Settings\Forms\FormSettings\SettingsFormSettings.ascx" />
+    <Content Include="App_UserControls\Settings\Forms\FormUsers\SettingsFormUsers.ascx" />
+    <Content Include="App_UserControls\Settings\ListViews\Companies\SettingsListViewCompanies.ascx" />
+    <Content Include="App_UserControls\Settings\ListViews\Manufacturers\SettingsListViewManufacturers.ascx" />
+    <Content Include="App_UserControls\Settings\ListViews\Models\SettingsListViewModels.ascx" />
+    <Content Include="App_UserControls\Settings\ListViews\Users\SettingsListViewUsers.ascx" />
+    <Content Include="App_UserControls\Settings\ListViews\Vendors\SettingsListViewVendors.ascx" />
+    <Content Include="App_UserControls\Settings\UsersForm.ascx" />
+    <Content Include="App_UserControls\Settings\CompaniesForm.ascx" />
+    <Content Include="App_UserControls\Settings\ManufacturersForm.ascx" />
+    <Content Include="App_UserControls\Settings\VendorsForm.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login\Default.aspx" />
+    <Content Include="Uploads\Sales.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Classes\BLL\Base\MasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Classes\BLL\Base\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Classes\BLL\Base\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Classes\BLL\CustomControls\CustomControls.cs" />
+    <Compile Include="App_Classes\BLL\CustomControls\Paging.cs" />
+    <Compile Include="App_Classes\BLL\Email\EmailBuilder.cs" />
+    <Compile Include="App_Classes\BLL\Events\EditEvents.cs" />
+    <Compile Include="App_Classes\BLL\Events\FilterEvents.cs" />
+    <Compile Include="App_Classes\BLL\Events\FilterOptions.cs" />
+    <Compile Include="App_Classes\BLL\Events\Filters.cs" />
+    <Compile Include="App_Classes\BLL\Events\FilterType.cs" />
+    <Compile Include="App_Classes\BLL\Events\MultiViewEvents.cs" />
+    <Compile Include="App_Classes\BLL\Events\Navigation.cs" />
+    <Compile Include="App_Classes\BLL\Events\NavigationEvents.cs" />
+    <Compile Include="App_Classes\BLL\Events\PagerEvents.cs" />
+    <Compile Include="App_Classes\BLL\Events\Search.cs" />
+    <Compile Include="App_Classes\BLL\Events\SearchEvents.cs" />
+    <Compile Include="App_Classes\BLL\Sessions\SessionHandler.cs" />
+    <Compile Include="App_Classes\BLL\Settings\ApplicationSettings.cs" />
+    <Compile Include="App_Classes\BLL\Settings\ReportSettings.cs" />
+    <Compile Include="App_Classes\BLL\Settings\UserControlNames.cs" />
+    <Compile Include="App_Classes\BLL\Common\GridViewExportUtil.cs" />
+    <Compile Include="App_Classes\BLL\Common\LanguageManager.cs" />
+    <Compile Include="App_Classes\BLL\Common\ListItems.cs" />
+    <Compile Include="App_Classes\BLL\Common\ListValues.cs" />
+    <Compile Include="App_Classes\BLL\Email\SendEmail.cs" />
+    <Compile Include="App_Classes\DAL\Data\DBAgent.cs" />
+    <Compile Include="App_Classes\DAL\Data\DBNoData.cs" />
+    <Compile Include="App_Classes\DAL\Data\DBSettings.cs" />
+    <Compile Include="App_Classes\DAL\Data\StoredProcedures.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FCTDetails.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FCTDetailsTotal.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FCTLastSettings.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FleetDayReportOverView.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FleetDayTransactionsOverView.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FleetDayTransactionsOverViewMFG.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FleetMonthReportOverView.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FleetYearReportOverView.cs" />
+    <Compile Include="App_Classes\DAL\Reports\FleetYearReportOverViewMFG.cs" />
+    <Compile Include="App_Classes\DAL\Reports\TaxOverView.cs" />
+    <Compile Include="App_Classes\DAL\Reports\TaxPriceOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerAddress.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerCodeName.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerContacts.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerDetails.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerDetailsFull.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerManufacturer.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerMFG.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerMFGAddr.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\BuyerName.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompaniesOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompanyDetails.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompanyEmailId.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompanyEmails.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompanyEmailsDetails.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompanyGroup.cs" />
+    <Compile Include="App_Classes\DAL\Search\Companies\CompanyGroupNames.cs" />
+    <Compile Include="App_Classes\DAL\Search\Currencies\CurrencyCodes.cs" />
+    <Compile Include="App_Classes\DAL\Search\Currencies\CurrencyDetails.cs" />
+    <Compile Include="App_Classes\DAL\Search\Dashboard\DashboardOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Dashboard\DashboardToExcel.cs" />
+    <Compile Include="App_Classes\DAL\Search\DocumentTypes\DocumentsSubTypes.cs" />
+    <Compile Include="App_Classes\DAL\Search\DocumentTypes\DocumentTypes.cs" />
+    <Compile Include="App_Classes\DAL\Search\DocumentTypes\DocumentTypesAccounts.cs" />
+    <Compile Include="App_Classes\DAL\Search\FleetDayOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\FleetMonthOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\ManufacturersOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\ModelsOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\SalesFileBuyersOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\SalesFileInvoicesOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Sales\SalesFileOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Sales\SalesManualInvoiceJournal.cs" />
+    <Compile Include="App_Classes\DAL\Search\Sales\SalesSearchEngine.cs" />
+    <Compile Include="App_Classes\DAL\Search\Sales\SalesSearchEngineExcel.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\SearchBuyersName.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\SearchBuyersOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Buyers\SearchBuyersType.cs" />
+    <Compile Include="App_Classes\DAL\Search\Sales\SearchCompanies.cs" />
+    <Compile Include="App_Classes\DAL\Search\SearchCompanyTypes.cs" />
+    <Compile Include="App_Classes\DAL\Search\SearchCountries.cs" />
+    <Compile Include="App_Classes\DAL\Search\SearchLastDates.cs" />
+    <Compile Include="App_Classes\DAL\Search\SearchManufacturers.cs" />
+    <Compile Include="App_Classes\DAL\Search\SearchTaxCode.cs" />
+    <Compile Include="App_Classes\DAL\Search\Users\SearchUsers.cs" />
+    <Compile Include="App_Classes\DAL\Search\SecurityUserPermissions.cs" />
+    <Compile Include="App_Classes\DAL\Search\Users\SecurityUsers.cs" />
+    <Compile Include="App_Classes\DAL\Search\Users\SecurityUsersAccess.cs" />
+    <Compile Include="App_Classes\DAL\Search\SerialsOverView.cs" />
+    <Compile Include="App_Classes\DAL\Search\Users\UsersOverView.cs" />
+    <Compile Include="App_GlobalResources\Commands.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Commands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Controls.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controls.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Labels.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ListItems.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListItems.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ListViewHeaders.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListViewHeaders.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ToolTips.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolTips.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_MasterPages\Application.Master.cs">
+      <DependentUpon>Application.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_MasterPages\Application.Master.designer.cs">
+      <DependentUpon>Application.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_MasterPages\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_MasterPages\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\AccessDenied\AccessDenied.ascx.cs">
+      <DependentUpon>AccessDenied.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\AccessDenied\AccessDenied.ascx.designer.cs">
+      <DependentUpon>AccessDenied.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\Commands\ButtonCommand.ascx.cs">
+      <DependentUpon>ButtonCommand.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\Commands\ButtonCommand.ascx.designer.cs">
+      <DependentUpon>ButtonCommand.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\Dialogs\Loading.ascx.cs">
+      <DependentUpon>Loading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\Dialogs\Loading.ascx.designer.cs">
+      <DependentUpon>Loading.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\EmptyDataTemplate.ascx.cs">
+      <DependentUpon>EmptyDataTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\EmptyDataTemplate.ascx.designer.cs">
+      <DependentUpon>EmptyDataTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\Panel\NavigationPanel.ascx.cs">
+      <DependentUpon>NavigationPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Controls\Panel\NavigationPanel.ascx.designer.cs">
+      <DependentUpon>NavigationPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\FleetDetails\DayReport\FleetDayReport.ascx.cs">
+      <DependentUpon>FleetDayReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\FleetDetails\DayReport\FleetDayReport.ascx.designer.cs">
+      <DependentUpon>FleetDayReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\FleetDetails\MonthReport\FleetMonthReport.ascx.cs">
+      <DependentUpon>FleetMonthReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\FleetDetails\MonthReport\FleetMonthReport.ascx.designer.cs">
+      <DependentUpon>FleetMonthReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewDayManufacturer\ListViewDayManufacturer.ascx.cs">
+      <DependentUpon>ListViewDayManufacturer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewDayManufacturer\ListViewDayManufacturer.ascx.designer.cs">
+      <DependentUpon>ListViewDayManufacturer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewDay\ListViewDay.ascx.cs">
+      <DependentUpon>ListViewDay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewDay\ListViewDay.ascx.designer.cs">
+      <DependentUpon>ListViewDay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewYearManufacturer\ListViewYearManufacturer.ascx.cs">
+      <DependentUpon>ListViewYearManufacturer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewYearManufacturer\ListViewYearManufacturer.ascx.designer.cs">
+      <DependentUpon>ListViewYearManufacturer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewYear\ListViewYear.ascx.cs">
+      <DependentUpon>ListViewYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\ListViewYear\ListViewYear.ascx.designer.cs">
+      <DependentUpon>ListViewYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\PanelColumns\FleetPanelColumns.ascx.cs">
+      <DependentUpon>FleetPanelColumns.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\PanelColumns\FleetPanelColumns.ascx.designer.cs">
+      <DependentUpon>FleetPanelColumns.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\TransactionsDay.ascx.cs">
+      <DependentUpon>TransactionsDay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\TransactionsDay.ascx.designer.cs">
+      <DependentUpon>TransactionsDay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\TransactionsYear.ascx.cs">
+      <DependentUpon>TransactionsYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Fleet\TransactionsYear.ascx.designer.cs">
+      <DependentUpon>TransactionsYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\InvoicesForm.ascx.cs">
+      <DependentUpon>InvoicesForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\InvoicesForm.ascx.designer.cs">
+      <DependentUpon>InvoicesForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\ListViews\Vendors\ListViewSalesBuyers.ascx.cs">
+      <DependentUpon>ListViewSalesBuyers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\ListViews\Vendors\ListViewSalesBuyers.ascx.designer.cs">
+      <DependentUpon>ListViewSalesBuyers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\ListViews\Countries\ListViewSalesCountries.ascx.cs">
+      <DependentUpon>ListViewSalesCountries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\ListViews\Countries\ListViewSalesCountries.ascx.designer.cs">
+      <DependentUpon>ListViewSalesCountries.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\ListViews\Documents\ListViewSalesInvoices.ascx.cs">
+      <DependentUpon>ListViewSalesInvoices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\ListViews\Documents\ListViewSalesInvoices.ascx.designer.cs">
+      <DependentUpon>ListViewSalesInvoices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\SalesReport\SalesReport.ascx.cs">
+      <DependentUpon>SalesReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\SalesReport\SalesReport.ascx.designer.cs">
+      <DependentUpon>SalesReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\Search\SearchEngine.ascx.cs">
+      <DependentUpon>SearchEngine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Invoices\Search\SearchEngine.ascx.designer.cs">
+      <DependentUpon>SearchEngine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FleetCashForm.ascx.cs">
+      <DependentUpon>FleetCashForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FleetCashForm.ascx.designer.cs">
+      <DependentUpon>FleetCashForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FleetDashboardForm.ascx.cs">
+      <DependentUpon>FleetDashboardForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FleetDashboardForm.ascx.designer.cs">
+      <DependentUpon>FleetDashboardForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FormTaxSpain\FormTaxSpain.ascx.cs">
+      <DependentUpon>FormTaxSpain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FormTaxSpain\FormTaxSpain.ascx.designer.cs">
+      <DependentUpon>FormTaxSpain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FormTaxUpload\FileUploadTax.ascx.cs">
+      <DependentUpon>FileUploadTax.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FormTaxUpload\FileUploadTax.ascx.designer.cs">
+      <DependentUpon>FileUploadTax.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FTP\FTPForm.ascx.cs">
+      <DependentUpon>FTPForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\FTP\FTPForm.ascx.designer.cs">
+      <DependentUpon>FTPForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\ListViewReports.ascx.cs">
+      <DependentUpon>ListViewReports.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\ListViewReports.ascx.designer.cs">
+      <DependentUpon>ListViewReports.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\OutputFileFrance\FileFrance.ascx.cs">
+      <DependentUpon>FileFrance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\OutputFileFrance\FileFrance.ascx.designer.cs">
+      <DependentUpon>FileFrance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\OutputFilesForm.ascx.cs">
+      <DependentUpon>OutputFilesForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\OutputFilesForm.ascx.designer.cs">
+      <DependentUpon>OutputFilesForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\OutputFileSpain\FileSpain.ascx.cs">
+      <DependentUpon>FileSpain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\OutputFileSpain\FileSpain.ascx.designer.cs">
+      <DependentUpon>FileSpain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\TaxSpain.ascx.cs">
+      <DependentUpon>TaxSpain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Reports\TaxSpain.ascx.designer.cs">
+      <DependentUpon>TaxSpain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormBuyers\SettingsFormBuyers.ascx.cs">
+      <DependentUpon>SettingsFormBuyers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormBuyers\SettingsFormBuyers.ascx.designer.cs">
+      <DependentUpon>SettingsFormBuyers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormCompanies\SettingsFormCompanies.ascx.cs">
+      <DependentUpon>SettingsFormCompanies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormCompanies\SettingsFormCompanies.ascx.designer.cs">
+      <DependentUpon>SettingsFormCompanies.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormEmail\SettingsFormEmail.ascx.cs">
+      <DependentUpon>SettingsFormEmail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormEmail\SettingsFormEmail.ascx.designer.cs">
+      <DependentUpon>SettingsFormEmail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormSettings\SettingsFormSettings.ascx.cs">
+      <DependentUpon>SettingsFormSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormSettings\SettingsFormSettings.ascx.designer.cs">
+      <DependentUpon>SettingsFormSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormUsers\SettingsFormUsers.ascx.cs">
+      <DependentUpon>SettingsFormUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\Forms\FormUsers\SettingsFormUsers.ascx.designer.cs">
+      <DependentUpon>SettingsFormUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Companies\SettingsListViewCompanies.ascx.cs">
+      <DependentUpon>SettingsListViewCompanies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Companies\SettingsListViewCompanies.ascx.designer.cs">
+      <DependentUpon>SettingsListViewCompanies.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Manufacturers\SettingsListViewManufacturers.ascx.cs">
+      <DependentUpon>SettingsListViewManufacturers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Manufacturers\SettingsListViewManufacturers.ascx.designer.cs">
+      <DependentUpon>SettingsListViewManufacturers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Models\SettingsListViewModels.ascx.cs">
+      <DependentUpon>SettingsListViewModels.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Models\SettingsListViewModels.ascx.designer.cs">
+      <DependentUpon>SettingsListViewModels.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Users\SettingsListViewUsers.ascx.cs">
+      <DependentUpon>SettingsListViewUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Users\SettingsListViewUsers.ascx.designer.cs">
+      <DependentUpon>SettingsListViewUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Vendors\SettingsListViewVendors.ascx.cs">
+      <DependentUpon>SettingsListViewVendors.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ListViews\Vendors\SettingsListViewVendors.ascx.designer.cs">
+      <DependentUpon>SettingsListViewVendors.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\UsersForm.ascx.cs">
+      <DependentUpon>UsersForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\UsersForm.ascx.designer.cs">
+      <DependentUpon>UsersForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\CompaniesForm.ascx.cs">
+      <DependentUpon>CompaniesForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\CompaniesForm.ascx.designer.cs">
+      <DependentUpon>CompaniesForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ManufacturersForm.ascx.cs">
+      <DependentUpon>ManufacturersForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\ManufacturersForm.ascx.designer.cs">
+      <DependentUpon>ManufacturersForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\VendorsForm.ascx.cs">
+      <DependentUpon>VendorsForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_UserControls\Settings\VendorsForm.ascx.designer.cs">
+      <DependentUpon>VendorsForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_MasterPages\Application.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Files\EmailAttachments\" />
+    <Folder Include="App_Files\Journals\" />
+    <Folder Include="Help\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Commands.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Commands.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Controls.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Controls.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Labels.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Labels.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ListItems.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ListItems.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ListViewHeaders.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ListViewHeaders.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Messages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ToolTips.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ToolTips.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2141</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
