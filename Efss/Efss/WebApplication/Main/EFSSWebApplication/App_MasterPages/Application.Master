@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Application.master.cs" Inherits="APP.App_MasterPages.Application" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <!--[if lte IE 7]><style type ="text/css">.rad__div-ControlPanel-Wrapper{ position: relative; top: 0; width: 100%; z-index: 999; text-align: center; margin-left: auto; margin-right: auto; }</style><![endif]-->
+    <title></title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManagerMaster" runat="server" EnableScriptGlobalization="true" EnablePartialRendering="true" EnableScriptLocalization="true" CombineScripts ="true" ScriptMode ="Auto">
+    </asp:ToolkitScriptManager>
+    <%-- Master Wrapper --%>
+    <div id="divMasterWrapper" class="div-Master-Wrapper">
+        <%-- Dialogs --%>
+        <uc:UCLoading runat="server" ID="LoadingPanel" />
+
+        <%-- Control Panel --%>
+        <div id="divControlPanelWrapper" class="rad__div-ControlPanel-Wrapper">
+            <asp:UpdatePanel ID="UpdatePanelControlPanel" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
+                <ContentTemplate>
+                    <rad:Ribbon ID="RibbonControlPanel" runat="server" RibbonSiteMapProvider="RibbonApplication" OnControlPanelItemCommand="ControlPanel_ItemCommand"  ApplicationName="EFSS"  DisplayControllerTitle ="true"   AutoShowRibbon="true"  />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <%-- Application Content --%>
+        <div id="divApplicationContent" class="div-Application-Content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%-- Push Div For Footer --%>
+        <div class="div-MasterPush">
+        </div>
+    </div>
+    <%-- Footer --%>
+    <div id="MasterFooterContent" class="div-Master-Footer">
+        <div class="div-Master-Footer-Content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Approved" xml:space="preserve">
+    <value>Approved - Click to sort asc / desc.</value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>Belgium - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyBack" xml:space="preserve">
+    <value>BuyBack - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyerCode" xml:space="preserve">
+    <value>Buyer Code  - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyerFiscalCode" xml:space="preserve">
+    <value>Fiscal Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyerName" xml:space="preserve">
+    <value>Vendor  - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyerTaxCode" xml:space="preserve">
+    <value>Tax Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="CompanyCode" xml:space="preserve">
+    <value>Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="CompanyFiscalCode" xml:space="preserve">
+    <value>Tax Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Name - Click to sort asc / desc.</value>
+  </data>
+  <data name="CompanyType" xml:space="preserve">
+    <value>Type - Click to sort asc / desc.</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email  - Click to sort asc / desc.</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Contact - Click to sort asc / desc.</value>
+  </data>
+  <data name="ContactTypeName" xml:space="preserve">
+    <value>Type - Click to sort asc / desc.</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>Country - Click to sort asc / desc.</value>
+  </data>
+  <data name="CountryVat" xml:space="preserve">
+    <value>Vat - Click to sort asc / desc.</value>
+  </data>
+  <data name="CreditNotes" xml:space="preserve">
+    <value>Credit Notes - Click to sort asc / desc.</value>
+  </data>
+  <data name="CurrencyCode" xml:space="preserve">
+    <value>Currency - Click to sort asc / desc.</value>
+  </data>
+  <data name="DatePicker" xml:space="preserve">
+    <value>Please, select a date.</value>
+  </data>
+  <data name="DateSelect" xml:space="preserve">
+    <value>Please select or enter a valid date. (Format dd/MM/yyyy)</value>
+  </data>
+  <data name="DocSubType" xml:space="preserve">
+    <value>Document Sub Type  - Click to sort asc / desc.</value>
+  </data>
+  <data name="DocType" xml:space="preserve">
+    <value>Document Type  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Users email address - Click to sort asc / desc.</value>
+  </data>
+  <data name="EngineSize" xml:space="preserve">
+    <value>Engine Sixe - Click to sort asc / desc.</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Please enter a valid password.</value>
+  </data>
+  <data name="EnterWindowsId" xml:space="preserve">
+    <value>Please enter a valid Windows user ID.</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>Errors - Click to sort asc / desc.</value>
+  </data>
+  <data name="EstimatedCap" xml:space="preserve">
+    <value>Estimated Cap. - Click to sort asc / desc.</value>
+  </data>
+  <data name="EstimatedDeprRate" xml:space="preserve">
+    <value>Estimated Depr. Rate - Click to sort asc / desc.</value>
+  </data>
+  <data name="EstimatedVBAmtPeriod" xml:space="preserve">
+    <value>Estimated Vol. Bonus Amt. Period - Click to sort asc / desc.</value>
+  </data>
+  <data name="EstimatedVolBonus" xml:space="preserve">
+    <value>Estimated Vol. Bonus - Click to sort asc / desc.</value>
+  </data>
+  <data name="FastSpec" xml:space="preserve">
+    <value>Fast Spec - Click to sort asc / desc.</value>
+  </data>
+  <data name="FileDate" xml:space="preserve">
+    <value>File Date - - Click to sort asc / desc.</value>
+  </data>
+  <data name="Firstname" xml:space="preserve">
+    <value>Firstname - Click to sort asc / desc.</value>
+  </data>
+  <data name="FleetCo" xml:space="preserve">
+    <value>FleetCo - Click to sort asc / desc.</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>France - Click to sort asc / desc.</value>
+  </data>
+  <data name="FuelType" xml:space="preserve">
+    <value>Fuel Type - Click to sort asc / desc.</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>Germany - Click to sort asc / desc.</value>
+  </data>
+  <data name="HertzLogo" xml:space="preserve">
+    <value>Click to go application home page.</value>
+  </data>
+  <data name="HertzLogoHelp" xml:space="preserve">
+    <value>Click to go to help home page.</value>
+  </data>
+  <data name="InServiceDate" xml:space="preserve">
+    <value>In Service Date  - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>Invoice Date  - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Invoice Number  - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoiceStatus" xml:space="preserve">
+    <value>Status - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoiceTotal" xml:space="preserve">
+    <value>Total - Click to sort asc / desc.</value>
+  </data>
+  <data name="IsDeleted" xml:space="preserve">
+    <value>User is deleted - Click to sort asc / desc.</value>
+  </data>
+  <data name="IsValid" xml:space="preserve">
+    <value>Is Valid - Click to sort asc / desc.</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>Italy - Click to sort asc / desc.</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="LastActivity" xml:space="preserve">
+    <value>Users last activity - Click to sort asc / desc.</value>
+  </data>
+  <data name="LastLoggedIn" xml:space="preserve">
+    <value>User last logged in - Click to sort asc / desc.</value>
+  </data>
+  <data name="ListViewDetails" xml:space="preserve">
+    <value>Click to edit / view details of selected item.</value>
+  </data>
+  <data name="LockedOut" xml:space="preserve">
+    <value>User is locked out - Click to sort asc / desc.</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>Luxembourg - Click to sort asc / desc.</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Manufacturer  - Click to sort asc / desc.</value>
+  </data>
+  <data name="ManufacturerName" xml:space="preserve">
+    <value>Manufacturer - Click to sort asc / desc.</value>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>Mileage  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model  - Click to sort asc / desc.</value>
+  </data>
+  <data name="ModelCode" xml:space="preserve">
+    <value>Model Code  - Click to sort asc / desc.</value>
+  </data>
+  <data name="ModelDescription" xml:space="preserve">
+    <value>Model Description - Click to sort asc / desc.</value>
+  </data>
+  <data name="ModelGroup" xml:space="preserve">
+    <value>Model Group - Click to sort asc / desc.</value>
+  </data>
+  <data name="ModelsCount" xml:space="preserve">
+    <value>Total Models - Click to sort asc / desc.</value>
+  </data>
+  <data name="ModelYear" xml:space="preserve">
+    <value>Model Year - Click to sort asc / desc.</value>
+  </data>
+  <data name="MoveFirst" xml:space="preserve">
+    <value>Go to first page.</value>
+  </data>
+  <data name="MoveLast" xml:space="preserve">
+    <value>Go to last page.</value>
+  </data>
+  <data name="MoveNext" xml:space="preserve">
+    <value>Go to next page.</value>
+  </data>
+  <data name="MovePrevious" xml:space="preserve">
+    <value>Go to previous page.</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>Netherlands - Click to sort asc / desc.</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="OpCo" xml:space="preserve">
+    <value>OpCo - Click to sort asc / desc.</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>Original - Click to sort asc / desc.</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PasteSerial" xml:space="preserve">
+    <value>Please, select serials and amounts and click here.</value>
+  </data>
+  <data name="Plate" xml:space="preserve">
+    <value>Plate  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Racfid" xml:space="preserve">
+    <value>RACFID - Click to sort asc / desc.</value>
+  </data>
+  <data name="RateClass" xml:space="preserve">
+    <value>Rate Class - Click to sort asc / desc.</value>
+  </data>
+  <data name="ReceivableStoreDate" xml:space="preserve">
+    <value>Receivable Stored Date - Click to sort asc / desc.</value>
+  </data>
+  <data name="RefreshListView" xml:space="preserve">
+    <value>Click to refresh current selection.</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>Region - Click to sort asc / desc.</value>
+  </data>
+  <data name="SelectDomain" xml:space="preserve">
+    <value>Please select domain to login.</value>
+  </data>
+  <data name="Serial" xml:space="preserve">
+    <value>Serial  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>Spain - Click to sort asc / desc.</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Surname - Click to sort asc / desc.</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>Switzerland - Click to sort asc / desc.</value>
+  </data>
+  <data name="SystemInformation" xml:space="preserve">
+    <value>Click to view system information and requirements.</value>
+  </data>
+  <data name="TasModelCode" xml:space="preserve">
+    <value>TAS Model Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="TextBuyerCode" xml:space="preserve">
+    <value>Please, enter a Buyer Code</value>
+  </data>
+  <data name="TextBuyerCodeError" xml:space="preserve">
+    <value>The Buyer Code cannot be empty.</value>
+  </data>
+  <data name="TotalInvoices" xml:space="preserve">
+    <value>Total Invoices -  Click to sort asc / desc.</value>
+  </data>
+  <data name="Uk" xml:space="preserve">
+    <value>UK - Click to sort asc / desc.</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Unit  - Click to sort asc / desc.</value>
+  </data>
+  <data name="VehicleType" xml:space="preserve">
+    <value>Vehicle Type  - Click to sort asc / desc.</value>
+  </data>
+  <data name="WholeSale" xml:space="preserve">
+    <value>WholeSale  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Wreck" xml:space="preserve">
+    <value>Wreck - Click to sort asc / desc.</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total - Click to sort asc / desc.</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active - Click to sort asc / desc.</value>
+  </data>
+  <data name="Conversion" xml:space="preserve">
+    <value>Conversion - Click to sort asc / desc.</value>
+  </data>
+  <data name="Delivered" xml:space="preserve">
+    <value>E-Status - Click to sort asc / desc.</value>
+  </data>
+  <data name="Future" xml:space="preserve">
+    <value>Fiture ISD - Click to sort asc / desc.</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactive - Click to sort asc / desc.</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other - Click to sort asc / desc.</value>
+  </data>
+  <data name="Suspend" xml:space="preserve">
+    <value>Suspend - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day1" xml:space="preserve">
+    <value>1 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day10" xml:space="preserve">
+    <value>10 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day11" xml:space="preserve">
+    <value>11 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day12" xml:space="preserve">
+    <value>12 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day13" xml:space="preserve">
+    <value>13 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day14" xml:space="preserve">
+    <value>14 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day15" xml:space="preserve">
+    <value>15 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day16" xml:space="preserve">
+    <value>16 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day17" xml:space="preserve">
+    <value>17 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day18" xml:space="preserve">
+    <value>18 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day19" xml:space="preserve">
+    <value>19 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day2" xml:space="preserve">
+    <value>2 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day20" xml:space="preserve">
+    <value>20 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day21" xml:space="preserve">
+    <value>21 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day22" xml:space="preserve">
+    <value>22 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day23" xml:space="preserve">
+    <value>23 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day24" xml:space="preserve">
+    <value>24 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day25" xml:space="preserve">
+    <value>25 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day26" xml:space="preserve">
+    <value>26 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day27" xml:space="preserve">
+    <value>27 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day28" xml:space="preserve">
+    <value>28 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day29" xml:space="preserve">
+    <value>29 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day3" xml:space="preserve">
+    <value>3 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day30" xml:space="preserve">
+    <value>30 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day31" xml:space="preserve">
+    <value>31 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day4" xml:space="preserve">
+    <value>4 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day5" xml:space="preserve">
+    <value>5 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day6" xml:space="preserve">
+    <value>6 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day7" xml:space="preserve">
+    <value>7 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day8" xml:space="preserve">
+    <value>8 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Day9" xml:space="preserve">
+    <value>9 - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month1" xml:space="preserve">
+    <value>JANUARY - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month10" xml:space="preserve">
+    <value>OCTOBER - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month11" xml:space="preserve">
+    <value>NOVEMBER - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month12" xml:space="preserve">
+    <value>DECEMBER - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month2" xml:space="preserve">
+    <value>FEBRUARY - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month3" xml:space="preserve">
+    <value>MARCH - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month4" xml:space="preserve">
+    <value>APRIL - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month5" xml:space="preserve">
+    <value>MAY - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month6" xml:space="preserve">
+    <value>JUNE - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month7" xml:space="preserve">
+    <value>JULY - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month8" xml:space="preserve">
+    <value>AUGUST - Click to sort asc / desc.</value>
+  </data>
+  <data name="Month9" xml:space="preserve">
+    <value>SEPTEMBER - Click to sort asc / desc.</value>
+  </data>
+  <data name="VehicleStatus" xml:space="preserve">
+    <value>Vehicle Status - Click to sort asc / desc.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount - Click to sort asc / desc.</value>
+  </data>
+  <data name="IsDuplicate" xml:space="preserve">
+    <value>Duplicate - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoiceType" xml:space="preserve">
+    <value>Invoice Type - Click to sort asc / desc.</value>
+  </data>
+  <data name="AreaCode" xml:space="preserve">
+    <value>Area Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="AreaName" xml:space="preserve">
+    <value>Area Name - Click to sort asc / desc.</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Group Name  - Click to sort asc / desc.</value>
+  </data>
+  <data name="OracleCode" xml:space="preserve">
+    <value>Oracle Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="LoginBack" xml:space="preserve">
+    <value>Click to return to the Login page.</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Rate - Click to sort asc / desc.</value>
+  </data>
+  <data name="NrcDate" xml:space="preserve">
+    <value>Nrc - Click to sort asc / desc.</value>
+  </data>
+  <data name="Processed" xml:space="preserve">
+    <value>Processed - Click to sort asc / desc.</value>
+  </data>
+  <data name="RegTaxAmount" xml:space="preserve">
+    <value>Reg Tax Amount - Click to sort asc / desc.</value>
+  </data>
+  <data name="TaxDate" xml:space="preserve">
+    <value>Tax Date - Click to sort asc / desc.</value>
+  </data>
+  <data name="Campa" xml:space="preserve">
+    <value>Campa  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category  - Click to sort asc / desc.</value>
+  </data>
+  <data name="CO2" xml:space="preserve">
+    <value>CO2  - Click to sort asc / desc.</value>
+  </data>
+  <data name="ITVSerial" xml:space="preserve">
+    <value>ITV  - Click to sort asc / desc.</value>
+  </data>
+  <data name="LocationCity" xml:space="preserve">
+    <value>Destiny  - Click to sort asc / desc.</value>
+  </data>
+  <data name="TaxCode" xml:space="preserve">
+    <value>Tax Code  - Click to sort asc / desc.</value>
+  </data>
+  <data name="TaxPCT" xml:space="preserve">
+    <value>Tax Pct  - Click to sort asc / desc.</value>
+  </data>
+  <data name="BankRegCode" xml:space="preserve">
+    <value>Bank Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="TotalPCT" xml:space="preserve">
+    <value>Total % - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyerType" xml:space="preserve">
+    <value>BuyerType - Click to sort asc / desc.</value>
+  </data>
+  <data name="LastSaleDate" xml:space="preserve">
+    <value>Last Sale Date - Click to sort asc / desc.</value>
+  </data>
+  <data name="TotalSales" xml:space="preserve">
+    <value>Total Sales  - Click to sort asc / desc.</value>
+  </data>
+  <data name="MSODate" xml:space="preserve">
+    <value>MSO Date - Click to sort asc / desc.</value>
+  </data>
+  <data name="SaleDocumentNumber" xml:space="preserve">
+    <value>Sale Document Number - Click to sort asc / desc.</value>
+  </data>
+  <data name="VehicleCode" xml:space="preserve">
+    <value>Vehicle Code - Click to sort asc / desc.</value>
+  </data>
+  <data name="BuyBackPCT" xml:space="preserve">
+    <value>BuyBack %  - Click to sort asc / desc.</value>
+  </data>
+  <data name="Lease" xml:space="preserve">
+    <value>Lease - Click to sort asc / desc.</value>
+  </data>
+  <data name="LeasePCT" xml:space="preserve">
+    <value>Lease %  - Click to sort asc / desc.</value>
+  </data>
+  <data name="WholeSalePCT" xml:space="preserve">
+    <value>WholeSale %  - Click to sort asc / desc.</value>
+  </data>
+  <data name="CountryCode" xml:space="preserve">
+    <value>Country Code  - Click to sort asc / desc.</value>
+  </data>
+  <data name="IsCorrect" xml:space="preserve">
+    <value>Is Correct - Click to sort asc / desc.</value>
+  </data>
+  <data name="IsExported" xml:space="preserve">
+    <value>Cars - Click to sort asc / desc.</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File Name - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesBE" xml:space="preserve">
+    <value>BE - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesFR" xml:space="preserve">
+    <value>FR - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesGE" xml:space="preserve">
+    <value>GE - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesIT" xml:space="preserve">
+    <value>IT - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesLU" xml:space="preserve">
+    <value>LU - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesNE" xml:space="preserve">
+    <value>NE - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesSP" xml:space="preserve">
+    <value>SP - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesSZ" xml:space="preserve">
+    <value>SZ - Click to sort asc / desc.</value>
+  </data>
+  <data name="InvoicesUK" xml:space="preserve">
+    <value>UK - Click to sort asc / desc.</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current - Click to sort asc / desc.</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes - Click to sort asc / desc.</value>
+  </data>
+  <data name="No_Payment_Due" xml:space="preserve">
+    <value>No Payment Due - Click to sort asc / desc.</value>
+  </data>
+</root>

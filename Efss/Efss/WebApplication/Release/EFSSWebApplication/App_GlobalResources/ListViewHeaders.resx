@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Approved" xml:space="preserve">
+    <value>APPROVED</value>
+  </data>
+  <data name="Belgium" xml:space="preserve">
+    <value>BELGIUM</value>
+  </data>
+  <data name="BuyBack" xml:space="preserve">
+    <value>BUYBACK</value>
+  </data>
+  <data name="BuyerCode" xml:space="preserve">
+    <value>CODE</value>
+  </data>
+  <data name="BuyerFiscalCode" xml:space="preserve">
+    <value>FISC. CODE</value>
+  </data>
+  <data name="BuyerName" xml:space="preserve">
+    <value>VENDOR</value>
+  </data>
+  <data name="BuyerTaxCode" xml:space="preserve">
+    <value>TAX CODE</value>
+  </data>
+  <data name="CompanyCode" xml:space="preserve">
+    <value>CODE</value>
+  </data>
+  <data name="CompanyFiscalCode" xml:space="preserve">
+    <value>TAX CODE</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>NAME</value>
+  </data>
+  <data name="CompanyType" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>EMAIL</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>CONTACT</value>
+  </data>
+  <data name="ContactTypeName" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>COUNTRY</value>
+  </data>
+  <data name="CountryVat" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="CreditNotes" xml:space="preserve">
+    <value>C.N</value>
+  </data>
+  <data name="CurrencyCode" xml:space="preserve">
+    <value>CURRENCY</value>
+  </data>
+  <data name="DocSubType" xml:space="preserve">
+    <value>SUBTYPE</value>
+  </data>
+  <data name="DocType" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>EMAIL</value>
+  </data>
+  <data name="EngineSize" xml:space="preserve">
+    <value>E.SIZE</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>ERRORS</value>
+  </data>
+  <data name="EstimatedCap" xml:space="preserve">
+    <value>CAP</value>
+  </data>
+  <data name="EstimatedDeprRate" xml:space="preserve">
+    <value>DPR.</value>
+  </data>
+  <data name="EstimatedVBAmtPeriod" xml:space="preserve">
+    <value>VB A</value>
+  </data>
+  <data name="EstimatedVolBonus" xml:space="preserve">
+    <value>VB</value>
+  </data>
+  <data name="FastSpec" xml:space="preserve">
+    <value>SPEC</value>
+  </data>
+  <data name="FileDate" xml:space="preserve">
+    <value>FILE DATE</value>
+  </data>
+  <data name="Firstname" xml:space="preserve">
+    <value>FIRSTNAME</value>
+  </data>
+  <data name="FleetCo" xml:space="preserve">
+    <value>FLEETCO</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>FRANCE</value>
+  </data>
+  <data name="FuelType" xml:space="preserve">
+    <value>FUEL</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>GERMANY</value>
+  </data>
+  <data name="InServiceDate" xml:space="preserve">
+    <value>I.S.DATE</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>INVOICE</value>
+  </data>
+  <data name="InvoiceStatus" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="InvoiceTotal" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="IsDeleted" xml:space="preserve">
+    <value>DELETED</value>
+  </data>
+  <data name="IsValid" xml:space="preserve">
+    <value>VALID</value>
+  </data>
+  <data name="Italy" xml:space="preserve">
+    <value>ITALY</value>
+  </data>
+  <data name="LastActivity" xml:space="preserve">
+    <value>LAST ACTIVITY</value>
+  </data>
+  <data name="LastLoggedIn" xml:space="preserve">
+    <value>LAST LOGIN</value>
+  </data>
+  <data name="LockedOut" xml:space="preserve">
+    <value>LOCKED OUT</value>
+  </data>
+  <data name="Luxembourg" xml:space="preserve">
+    <value>LUXEMBOURG</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>MANUFACTURER</value>
+  </data>
+  <data name="ManufacturerName" xml:space="preserve">
+    <value>MANUFACTURER</value>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>MILEAGE</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>MODEL</value>
+  </data>
+  <data name="ModelCode" xml:space="preserve">
+    <value>MODEL</value>
+  </data>
+  <data name="ModelDescription" xml:space="preserve">
+    <value>DESC.</value>
+  </data>
+  <data name="ModelGroup" xml:space="preserve">
+    <value>GROUP</value>
+  </data>
+  <data name="ModelsCount" xml:space="preserve">
+    <value>TOTAL MODELS</value>
+  </data>
+  <data name="ModelYear" xml:space="preserve">
+    <value>YEAR</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>NAME</value>
+  </data>
+  <data name="Netherlands" xml:space="preserve">
+    <value>NETHERLANDS</value>
+  </data>
+  <data name="OpCo" xml:space="preserve">
+    <value>OPCO</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>ORIGINAL</value>
+  </data>
+  <data name="Plate" xml:space="preserve">
+    <value>PLATE</value>
+  </data>
+  <data name="Racfid" xml:space="preserve">
+    <value>RACFID</value>
+  </data>
+  <data name="RateClass" xml:space="preserve">
+    <value>RATE</value>
+  </data>
+  <data name="ReceivableStoreDate" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>REGION</value>
+  </data>
+  <data name="Serial" xml:space="preserve">
+    <value>SERIAL</value>
+  </data>
+  <data name="Spain" xml:space="preserve">
+    <value>SPAIN</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>SURNAME</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>SWITZERLAND</value>
+  </data>
+  <data name="TasModelCode" xml:space="preserve">
+    <value>TAS</value>
+  </data>
+  <data name="TotalInvoices" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="Uk" xml:space="preserve">
+    <value>UK</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>UNIT</value>
+  </data>
+  <data name="VehicleType" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="WholeSale" xml:space="preserve">
+    <value>RISK</value>
+  </data>
+  <data name="Wreck" xml:space="preserve">
+    <value>WRECK</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>ACTIVE</value>
+  </data>
+  <data name="Conversion" xml:space="preserve">
+    <value>CONVERSION</value>
+  </data>
+  <data name="Delivered" xml:space="preserve">
+    <value>E-STATUS</value>
+  </data>
+  <data name="Future" xml:space="preserve">
+    <value>FUTURE</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>INACTIVE</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>OTHER</value>
+  </data>
+  <data name="Suspend" xml:space="preserve">
+    <value>SUSPEND</value>
+  </data>
+  <data name="Day1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Day10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Day11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Day12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Day13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Day14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="Day15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Day16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Day17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="Day18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Day19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="Day2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Day20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Day21" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="Day22" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="Day23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Day24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="Day25" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="Day26" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="Day27" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="Day28" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="Day29" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="Day3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Day30" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="Day31" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="Day4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Day5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Day6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Day7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Day8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Day9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Month1" xml:space="preserve">
+    <value>JANUARY</value>
+  </data>
+  <data name="Month10" xml:space="preserve">
+    <value>OCTOBER</value>
+  </data>
+  <data name="Month11" xml:space="preserve">
+    <value>NOVEMBER</value>
+  </data>
+  <data name="Month12" xml:space="preserve">
+    <value>DECEMBER</value>
+  </data>
+  <data name="Month2" xml:space="preserve">
+    <value>FEBRUARY</value>
+  </data>
+  <data name="Month3" xml:space="preserve">
+    <value>MARCH</value>
+  </data>
+  <data name="Month4" xml:space="preserve">
+    <value>APRIL</value>
+  </data>
+  <data name="Month5" xml:space="preserve">
+    <value>MAY</value>
+  </data>
+  <data name="Month6" xml:space="preserve">
+    <value>JUNE</value>
+  </data>
+  <data name="Month7" xml:space="preserve">
+    <value>JULY</value>
+  </data>
+  <data name="Month8" xml:space="preserve">
+    <value>AUGUST</value>
+  </data>
+  <data name="Month9" xml:space="preserve">
+    <value>SEPTEMBER</value>
+  </data>
+  <data name="VehicleStatus" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="IsDuplicate" xml:space="preserve">
+    <value>DUPLICATE</value>
+  </data>
+  <data name="InvoiceType" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="AreaCode" xml:space="preserve">
+    <value>AREA CODE</value>
+  </data>
+  <data name="AreaName" xml:space="preserve">
+    <value>AREA NAME</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>GROUP</value>
+  </data>
+  <data name="OracleCode" xml:space="preserve">
+    <value>ORACLE</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>RATE</value>
+  </data>
+  <data name="NrcDate" xml:space="preserve">
+    <value>NRC</value>
+  </data>
+  <data name="Processed" xml:space="preserve">
+    <value>PROCESSED</value>
+  </data>
+  <data name="RegTaxAmount" xml:space="preserve">
+    <value>TAX AMT.</value>
+  </data>
+  <data name="TaxDate" xml:space="preserve">
+    <value>TAX</value>
+  </data>
+  <data name="Campa" xml:space="preserve">
+    <value>CAMPA</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>CATEGORY</value>
+  </data>
+  <data name="CO2" xml:space="preserve">
+    <value>CO2</value>
+  </data>
+  <data name="ITVSerial" xml:space="preserve">
+    <value>ITV</value>
+  </data>
+  <data name="LocationCity" xml:space="preserve">
+    <value>DESTINY</value>
+  </data>
+  <data name="TaxCode" xml:space="preserve">
+    <value>TAX CODE</value>
+  </data>
+  <data name="TaxPCT" xml:space="preserve">
+    <value>TAX PCT</value>
+  </data>
+  <data name="BankRegCode" xml:space="preserve">
+    <value>BANK</value>
+  </data>
+  <data name="TotalPCT" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="BuyerType" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="LastSaleDate" xml:space="preserve">
+    <value>LAST SALE</value>
+  </data>
+  <data name="TotalSales" xml:space="preserve">
+    <value>TOTAL SALES</value>
+  </data>
+  <data name="MSODate" xml:space="preserve">
+    <value>MSO</value>
+  </data>
+  <data name="SaleDocumentNumber" xml:space="preserve">
+    <value>S.D.N.</value>
+  </data>
+  <data name="VehicleCode" xml:space="preserve">
+    <value>CODE</value>
+  </data>
+  <data name="BuyBackPCT" xml:space="preserve">
+    <value>BUYBACK %</value>
+  </data>
+  <data name="Lease" xml:space="preserve">
+    <value>LEASE</value>
+  </data>
+  <data name="LeasePCT" xml:space="preserve">
+    <value>LEASE %</value>
+  </data>
+  <data name="WholeSalePCT" xml:space="preserve">
+    <value>RISK %</value>
+  </data>
+  <data name="CountryCode" xml:space="preserve">
+    <value>COUNTRY</value>
+  </data>
+  <data name="IsCorrect" xml:space="preserve">
+    <value>VALID</value>
+  </data>
+  <data name="IsExported" xml:space="preserve">
+    <value>CAR</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>FILE NAME</value>
+  </data>
+  <data name="InvoicesBE" xml:space="preserve">
+    <value>BE</value>
+  </data>
+  <data name="InvoicesFR" xml:space="preserve">
+    <value>FR</value>
+  </data>
+  <data name="InvoicesGE" xml:space="preserve">
+    <value>GE</value>
+  </data>
+  <data name="InvoicesIT" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="InvoicesLU" xml:space="preserve">
+    <value>LU</value>
+  </data>
+  <data name="InvoicesNE" xml:space="preserve">
+    <value>NE</value>
+  </data>
+  <data name="InvoicesSP" xml:space="preserve">
+    <value>SP</value>
+  </data>
+  <data name="InvoicesSZ" xml:space="preserve">
+    <value>SZ</value>
+  </data>
+  <data name="InvoicesUK" xml:space="preserve">
+    <value>UK</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>CURRENT</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="No_Payment_Due" xml:space="preserve">
+    <value>NO PAY. DUE</value>
+  </data>
+</root>

@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[EMPRESA] (
+    [DEALER]       VARCHAR (50)  NULL,
+    [EMPRESA]      VARCHAR (50)  NULL,
+    [CIF]          VARCHAR (50)  NULL,
+    [NIF]          VARCHAR (50)  NULL,
+    [NOMBRE]       VARCHAR (100) NULL,
+    [DIRECCION]    VARCHAR (100) NULL,
+    [CP]           VARCHAR (50)  NULL,
+    [POBLACION]    VARCHAR (100) NULL,
+    [TIPO]         VARCHAR (50)  NULL,
+    [CONTACTO]     VARCHAR (75)  NULL,
+    [COD_CALLE]    VARCHAR (50)  NULL,
+    [NUMERO_CALLE] VARCHAR (50)  NULL,
+    [COD_VENDOR]   VARCHAR (50)  NULL,
+    [imp_fec_del]  BIT           NULL,
+    [telefono]     VARCHAR (50)  NULL,
+    [movil]        VARCHAR (50)  NULL,
+    [clienteweb]   CHAR (9)      NULL,
+    [vendedor_id]  INT           NULL,
+    [pais]         VARCHAR (50)  NULL,
+    [fecha_alta]   DATETIME      NULL,
+    [email]        VARCHAR (100) NULL,
+    [fax]          VARCHAR (50)  NULL
+);
+

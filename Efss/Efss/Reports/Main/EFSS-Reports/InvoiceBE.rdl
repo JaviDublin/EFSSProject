@@ -1,0 +1,2539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>7.8663in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>9.5905in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle1">
+                      <ReportItems>
+                        <Image Name="LogoHertz">
+                          <Source>Embedded</Source>
+                          <Value>hertz_logo</Value>
+                          <Top>0.71559cm</Top>
+                          <Left>0.62645cm</Left>
+                          <Height>1.08466cm</Height>
+                          <Width>3.06878cm</Width>
+                          <Style />
+                        </Image>
+                        <Textbox Name="CompanyDetails">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!COMPANY_ADDRESS_1.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_2.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_3.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_4.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_5.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_6.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_7.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_8.Value + VBCRLF +
+Fields!COMPANY_ADDRESS_9.Value</Value>
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>2.04458cm</Top>
+                          <Left>0.65291cm</Left>
+                          <Height>4.11493cm</Height>
+                          <Width>5.83375cm</Width>
+                          <ZIndex>1</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceNumberLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>FACTURE N°:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.5cm</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>2.54cm</Width>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceNumberLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>FACTUUR N°:</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.95cm</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceDateLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>DATE:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.60075in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceDateLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>DATUM:</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.81958in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>KOPER:</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>1.29946in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ACHETEUR:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>1.09104in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerAddress1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BUYER_ADDRESS_1.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>1.76851in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>3.23958in</Width>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceNumber">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!DOCUMENT_NUMBER.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.29201in</Top>
+                          <Left>5.34735in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1in</Width>
+                          <ZIndex>9</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerName">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BUYER_NAME.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>1.5219in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>3.23958in</Width>
+                          <ZIndex>10</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceDate">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!INVOICE_DATE.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.67547in</Top>
+                          <Left>5.34735in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1in</Width>
+                          <ZIndex>11</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerAddress2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BUYER_ADDRESS_2.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>2.00123in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>3.23958in</Width>
+                          <ZIndex>12</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerAddress3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BUYER_ADDRESS_3.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>2.24784in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>3.23958in</Width>
+                          <ZIndex>13</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="TopMessage1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>L'acheteur achète le véhicule repris ci-dessous dans l'état où il se trouve, bien connu de l'acheteur, et sans garantie.</Value>
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>3.06619in</Top>
+                          <Left>0.24663in</Left>
+                          <Height>0.4cm</Height>
+                          <Width>7.1667in</Width>
+                          <ZIndex>14</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="VatLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>BTW Nr:</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>2.69467in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>15</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="VatLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>N° TVA:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>2.47584in</Top>
+                          <Left>4.28485in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>16</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="BuyerFiscalCode">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BUYER_FISCAL_CODE.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>2.60084in</Top>
+                          <Left>5.72235in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.67708in</Width>
+                          <ZIndex>17</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="InvoiceDetails">
+                          <ReportItems>
+                            <Textbox Name="ModelLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Modèle:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.53811in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="UnitLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Unit N°:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>3.10307in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="UnitLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Unit Nr:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>3.31611in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox48">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>1ère mise en circulation:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox48</rd:DefaultName>
+                              <Top>0.96621in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1.29167in</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="OSDLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Einddatum BB:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.87615in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="ModelLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Model:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.73726in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>5</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="ManufacturerLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Merk:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.31119in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>6</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="SerialLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>N° Chassis:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>3.51526in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>7</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox53">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>1ste maal gebruikt:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox53</rd:DefaultName>
+                              <Top>1.15147in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>8</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="ISDLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Date début BB:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.23704in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>9</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="SerialLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Chassis Nr:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>3.72829in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>10</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="OSDLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Date fin BB:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.677in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>11</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="ManufacturerLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Marque:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.125in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>12</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="MileageLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Kilométrage:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.79954in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>13</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="MileageLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Kilometerstand:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.99869in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>14</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="ISDLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Startdatum BB:</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.45008in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>15</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Manufacturer">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!MANUFACTURER_NAME.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.23704in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>16</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Model">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!MODEL_DESCRIPTION.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.64343in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>17</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="MSO_DATE">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!MSO_DATE.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>MSO_DATE</rd:DefaultName>
+                              <Top>1.07152in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>18</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Mileage">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!MILEAGE.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.92454in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>19</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="InServiceDate">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!IN_SERVICE_DATE.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.36204in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>20</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="OutServiceDate">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!OUT_SERVICE_DATE.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.802in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>21</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Unit">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!VEHICLE_UNIT.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>3.22807in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>22</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Serial">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!VEHICLE_SERIAL.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>3.64026in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>23</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="PlateLabel">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Immatriculation:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.35958in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>24</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="PlateLabel_2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Inschrijvingsnummer</Value>
+                                      <Style>
+                                        <FontStyle>Italic</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.57262in</Top>
+                              <Left>0.20818in</Left>
+                              <Height>0.4cm</Height>
+                              <Width>1in</Width>
+                              <ZIndex>25</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Plate">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!VEHICLE_PLATE.Value</Value>
+                                      <Style>
+                                        <FontSize>8pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.48458in</Top>
+                              <Left>2.62503in</Left>
+                              <Height>0.45cm</Height>
+                              <Width>2.10417in</Width>
+                              <ZIndex>26</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Top>3.47838in</Top>
+                          <Left>0.24663in</Left>
+                          <Height>3.99051in</Height>
+                          <Width>6.60072in</Width>
+                          <ZIndex>18</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="TopMessage2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>De koper koopt de wagen, zoals hieronder vermeld, in de staat waarin hij zich bevindt, goedgekeurd door de koper.</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>7pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>3.25145in</Top>
+                          <Left>0.24663in</Left>
+                          <Height>0.4cm</Height>
+                          <Width>7.1667in</Width>
+                          <ZIndex>19</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceNetLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Prix hors T.V.A.:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>7.53833in</Top>
+                          <Left>0.4444in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>20</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceVatLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>B.T.W.:</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.26427in</Top>
+                          <Left>0.45482in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>21</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceTotalLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Somme à payer:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.51088in</Top>
+                          <Left>0.45482in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>22</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceTotalLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Te betalen bedrag:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.74361in</Top>
+                          <Left>0.45482in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1.1875in</Width>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceNetLabel_2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Prijs excl. B.T.W.:</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>7.7675in</Top>
+                          <Left>0.4444in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>24</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceVatLabel">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>T.V.A:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.03155in</Top>
+                          <Left>0.4444in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>25</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceNet">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!INVOICE_NET.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>7.66333in</Top>
+                          <Left>3.05917in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>26</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceVat">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!INVOICE_VAT.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.15655in</Top>
+                          <Left>3.05917in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>27</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="CurrencyLabel1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>, - EURO</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>7.66333in</Top>
+                          <Left>4.17375in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>28</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="InvoiceTotal">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!INVOICE_TOTAL.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.63588in</Top>
+                          <Left>3.05917in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>29</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="CurrencyLabel2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>, - EURO</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.15655in</Top>
+                          <Left>4.17375in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>30</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Mention">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Mention:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>9.08744in</Top>
+                          <Left>0.45482in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>31</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="CurrencyLabel3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>, - EURO</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.63588in</Top>
+                          <Left>4.17375in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1in</Width>
+                          <ZIndex>32</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="VatPCT">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIf(Fields!INVOICE_VAT.Value= 0,"0.00 %",Fields!VAT_PCT.Value)</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>8.15655in</Top>
+                          <Left>1.6425in</Left>
+                          <Height>0.45cm</Height>
+                          <Width>1.17708in</Width>
+                          <ZIndex>33</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Line Name="Line2">
+                          <Top>8.38927in</Top>
+                          <Left>1.6425in</Left>
+                          <Height>0in</Height>
+                          <Width>1.17708in</Width>
+                          <ZIndex>34</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Dotted</Style>
+                            </Border>
+                          </Style>
+                        </Line>
+                        <Textbox Name="InvoiceMode">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!INVOICE_MODE.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.81958in</Top>
+                          <Left>2.76648in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.29269in</Width>
+                          <ZIndex>35</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Height>9.5905in</Height>
+        <Width>7.8663in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>24.39146cm</Height>
+    <Style />
+  </Body>
+  <Width>19.98041cm</Width>
+  <Page>
+    <PageFooter>
+      <Height>1in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="BottomMessage1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Seuls les tribunaux de Bruxelles seront compétents -</Value>
+                  <Style>
+                    <FontSize>7pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.41142in</Top>
+          <Left>1.37065in</Left>
+          <Height>0.45cm</Height>
+          <Width>2.39583in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="BottomMessage2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Alleen de rechtbanken van Brussel zijn bevoegd.</Value>
+                  <Style>
+                    <FontStyle>Italic</FontStyle>
+                    <FontSize>7pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.41142in</Top>
+          <Left>4.02097in</Left>
+          <Height>0.45cm</Height>
+          <Width>2.53125in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsEFSS">
+      <DataSourceReference>EFSSDataSource</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>93a33e88-819f-46d7-bcad-9082802c9717</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>dsEFSS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@countryId">
+            <Value>=Parameters!countryId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@companyId">
+            <Value>=Parameters!companyId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@buyerId">
+            <Value>=Parameters!buyerId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@fileDate">
+            <Value>=Parameters!fileDate.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@invoiceDate">
+            <Value>=Parameters!invoiceDate.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@documentType">
+            <Value>=Parameters!documentType.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@documentSubType">
+            <Value>=Parameters!documentSubType.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@docItemId">
+            <Value>=Parameters!docItemId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@unit">
+            <Value>=Parameters!unit.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@serial">
+            <Value>=Parameters!serial.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@plate">
+            <Value>=Parameters!plate.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@manufacturer">
+            <Value>=Parameters!manufacturer.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@buyerCode">
+            <Value>=Parameters!buyerCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@buyerName">
+            <Value>=Parameters!buyerName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@invoiceFrom">
+            <Value>=Parameters!invoiceFrom.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@invoiceTo">
+            <Value>=Parameters!invoiceTo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@dateFrom">
+            <Value>=Parameters!dateFrom.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@dateTo">
+            <Value>=Parameters!dateTo.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@vehicleType">
+            <Value>=Parameters!vehicleType.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@type">
+            <Value>=Parameters!type.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@invoiceMode">
+            <Value>=Parameters!invoiceMode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@freeFormatText">
+            <Value>=Parameters!freeFormatText.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>spSalesPDFBELU</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="DOCITEMID">
+          <DataField>DOCITEMID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DOCUMENTID">
+          <DataField>DOCUMENTID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="COMPANYID">
+          <DataField>COMPANYID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DOCUMENT_NUMBER">
+          <DataField>DOCUMENT_NUMBER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOCUMENT_TYPE">
+          <DataField>DOCUMENT_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOCUMENT_SUB_TYPE">
+          <DataField>DOCUMENT_SUB_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_CODE">
+          <DataField>COMPANY_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_NAME">
+          <DataField>COMPANY_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_FISCAL_CODE">
+          <DataField>COMPANY_FISCAL_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_1">
+          <DataField>COMPANY_ADDRESS_1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_2">
+          <DataField>COMPANY_ADDRESS_2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_3">
+          <DataField>COMPANY_ADDRESS_3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_4">
+          <DataField>COMPANY_ADDRESS_4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_5">
+          <DataField>COMPANY_ADDRESS_5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_6">
+          <DataField>COMPANY_ADDRESS_6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_7">
+          <DataField>COMPANY_ADDRESS_7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_8">
+          <DataField>COMPANY_ADDRESS_8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_9">
+          <DataField>COMPANY_ADDRESS_9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_10">
+          <DataField>COMPANY_ADDRESS_10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_11">
+          <DataField>COMPANY_ADDRESS_11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMPANY_ADDRESS_12">
+          <DataField>COMPANY_ADDRESS_12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_ID">
+          <DataField>BUYER_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_CODE">
+          <DataField>BUYER_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_NAME">
+          <DataField>BUYER_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_TAX_CODE">
+          <DataField>BUYER_TAX_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_FISCAL_CODE">
+          <DataField>BUYER_FISCAL_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_TYPE">
+          <DataField>BUYER_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_ADDRESS_1">
+          <DataField>BUYER_ADDRESS_1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_ADDRESS_2">
+          <DataField>BUYER_ADDRESS_2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BUYER_ADDRESS_3">
+          <DataField>BUYER_ADDRESS_3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VEHICLE_SERIAL">
+          <DataField>VEHICLE_SERIAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VEHICLE_UNIT">
+          <DataField>VEHICLE_UNIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INVOICE_NET">
+          <DataField>INVOICE_NET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INVOICE_VAT">
+          <DataField>INVOICE_VAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INVOICE_TOTAL">
+          <DataField>INVOICE_TOTAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VEHICLE_PLATE">
+          <DataField>VEHICLE_PLATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IN_SERVICE_DATE">
+          <DataField>IN_SERVICE_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OUT_SERVICE_DATE">
+          <DataField>OUT_SERVICE_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MSO_DATE">
+          <DataField>MSO_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MANUFACTURER_NAME">
+          <DataField>MANUFACTURER_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MODEL_DESCRIPTION">
+          <DataField>MODEL_DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MILEAGE">
+          <DataField>MILEAGE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TODAY">
+          <DataField>TODAY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INVOICE_DATE">
+          <DataField>INVOICE_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COUNTRYVAT">
+          <DataField>COUNTRYVAT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SALE_TYPE">
+          <DataField>SALE_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VAT_PCT">
+          <DataField>VAT_PCT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="INVOICE_MODE">
+          <DataField>INVOICE_MODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FREE_FORMAT_TEXT">
+          <DataField>FREE_FORMAT_TEXT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="buyerId">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>buyer Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="countryId">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>country Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="companyId">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>company Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fileDate">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>file Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="invoiceDate">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>invoice Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="documentType">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>document Type</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="documentSubType">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>document Sub Type</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="docItemId">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>doc Item Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="unit">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>unit</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="serial">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>serial</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="plate">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>plate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="manufacturer">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>manufacturer</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="buyerCode">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>buyer Code</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="buyerName">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>buyer Name</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="invoiceFrom">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>invoice From</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="invoiceTo">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>invoice To</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="dateFrom">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>date From</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="dateTo">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>date To</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="vehicleType">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>vehicle Type</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="type">
+      <DataType>Integer</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>type</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="invoiceMode">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>invoice Mode</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="freeFormatText">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>free Format Text</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="hertz_logo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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
+J6tXn5ORVcypr9rGBwO5w2Nd7v3dy7FJHmf9N+xl93g9rgl7nD7V+3Xr+VUfu/EKu703UkkkucbT/9n/7RCqUGhvdG9zaG9wIDMuMAA4QklNBCUAAAAAABAAAAAAAAAAAAAAAAAAAAAAOEJJTQPtAAAAAAAQAEgAAAABAAIASAAAAAEAAjhCSU0EJgAAAAAADgAAAAAAAAAAAAA/gAAAOEJJTQQNAAAAAAAEAAAAeDhCSU0EGQAAAAAABAAAAB44QklNA/MAAAAAAAkAAAAAAAAAAAEAOEJJTScQAAAAAAAKAAEAAAAAAAAAAjhCSU0D9QAAAAAASAAvZmYAAQBsZmYABgAAAAAAAQAvZmYAAQChmZoABgAAAAAAAQAyAAAAAQBaAAAABgAAAAAAAQA1AAAAAQAtAAAABgAAAAAAAThCSU0D+AAAAAAAcAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAA4QklNBAAAAAAAAAIAADhCSU0EAgAAAAAAAgAAOEJJTQQwAAAAAAABAQA4QklNBC0AAAAAAAYAAQAAAAI4QklNBAgAAAAAABAAAAABAAACQAAAAkAAAAAAOEJJTQQeAAAAAAAEAAAAADhCSU0EGgAAAAADSQAAAAYAAAAAAAAAAAAAACkAAAB0AAAACgBVAG4AdABpAHQAbABlAGQALQA1AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAB0AAAAKQAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAbnVsbAAAAAIAAAAGYm91bmRzT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAAAAAAAA
+TGVmdGxvbmcAAAAAAAAAAEJ0b21sb25nAAAAKQAAAABSZ2h0bG9uZwAAAHQAAAAGc2xpY2VzVmxMcwAAAAFPYmpjAAAAAQAAAAAABXNsaWNlAAAAEgAAAAdzbGljZUlEbG9uZwAAAAAAAAAHZ3JvdXBJRGxvbmcAAAAAAAAABm9yaWdpbmVudW0AAAAMRVNsaWNlT3JpZ2luAAAADWF1dG9HZW5lcmF0ZWQAAAAAVHlwZWVudW0AAAAKRVNsaWNlVHlwZQAAAABJbWcgAAAABmJvdW5kc09iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAACkAAAAAUmdodGxvbmcAAAB0AAAAA3VybFRFWFQAAAABAAAAAAAAbnVsbFRFWFQAAAABAAAAAAAATXNnZVRFWFQAAAABAAAAAAAGYWx0VGFnVEVYVAAAAAEAAAAAAA5jZWxsVGV4dElzSFRNTGJvb2wBAAAACGNlbGxUZXh0VEVYVAAAAAEAAAAAAAlob3J6QWxpZ25lbnVtAAAAD0VTbGljZUhvcnpBbGlnbgAAAAdkZWZhdWx0AAAACXZlcnRBbGlnbmVudW0AAAAPRVNsaWNlVmVydEFsaWduAAAAB2RlZmF1bHQAAAALYmdDb2xvclR5cGVlbnVtAAAAEUVTbGljZUJHQ29sb3JUeXBlAAAAAE5vbmUAAAAJdG9wT3V0c2V0bG9uZwAAAAAAAAAKbGVmdE91dHNldGxvbmcAAAAAAAAADGJvdHRvbU91dHNldGxvbmcAAAAAAAAAC3JpZ2h0T3V0c2V0bG9uZwAAAAAAOEJJTQQoAAAAAAAMAAAAAj/wAAAAAAAAOEJJTQQUAAAAAAAEAAAAAzhCSU0EDAAAAAAKwwAAAAEAAAB0AAAAKQAAAVwAADe8AAAKpwAYAAH/2P/gABBKRklGAAECAABIAEgA
+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
+LzA3LzMwLTE4OjEyOjE4ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzQgV2luZG93cyIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxMC0wMy0wNVQxMTowOToxN1oiIHhtcDpNb2RpZnlEYXRlPSIyMDEwLTAzLTA1VDExOjA5OjE3WiIgeG1wOkNyZWF0ZURhdGU9IjIwMTAtMDMtMDVUMTE6MDk6MTdaIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM3QzA3MTQ4MzcyOERGMTFBNEIxQzg5OEE4MUU2RjVEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM2QzA3MTQ4MzcyOERGMTFBNEIxQzg5OEE4MUU2RjVEIiB4bXBNTTpPcmlnaW5h
+bERvY3VtZW50SUQ9InhtcC5kaWQ6MzZDMDcxNDgzNzI4REYxMUE0QjFDODk4QTgxRTZGNUQiIGRjOmZvcm1hdD0iaW1hZ2UvanBlZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgdGlmZjpOYXRpdmVEaWdlc3Q9IjI1NiwyNTcsMjU4LDI1OSwyNjIsMjc0LDI3NywyODQsNTMwLDUzMSwyODIsMjgzLDI5NiwzMDEsMzE4LDMxOSw1MjksNTMyLDMwNiwyNzAsMjcxLDI3MiwzMDUsMzE1LDMzNDMyOzJFNTQ0MDA4QjY4QkIwOTUyOUFERTBDMTY4ODY0MDBCIiBleGlmOlBpeGVsWERpbWVuc2lvbj0iMTE2IiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNDEiIGV4aWY6Q29sb3JTcGFjZT0iMSIgZXhpZjpOYXRpdmVEaWdlc3Q9IjM2ODY0LDQwOTYwLDQwOTYxLDM3MTIxLDM3MTIyLDQwOTYyLDQwOTYzLDM3NTEwLDQwOTY0LDM2ODY3LDM2ODY4LDMzNDM0LDMzNDM3LDM0ODUwLDM0ODUyLDM0ODU1LDM0ODU2LDM3Mzc3LDM3Mzc4LDM3Mzc5LDM3MzgwLDM3MzgxLDM3MzgyLDM3MzgzLDM3Mzg0LDM3Mzg1LDM3Mzg2LDM3Mzk2LDQxNDgzLDQxNDg0LDQxNDg2LDQxNDg3LDQxNDg4LDQxNDkyLDQxNDkzLDQxNDk1LDQxNzI4LDQxNzI5LDQxNzMwLDQxOTg1LDQxOTg2LDQxOTg3
+LDQxOTg4LDQxOTg5LDQxOTkwLDQxOTkxLDQxOTkyLDQxOTkzLDQxOTk0LDQxOTk1LDQxOTk2LDQyMDE2LDAsMiw0LDUsNiw3LDgsOSwxMCwxMSwxMiwxMywxNCwxNSwxNiwxNywxOCwyMCwyMiwyMywyNCwyNSwyNiwyNywyOCwzMDszQjRFM0NDMzdCOEU0QkI3MjMxQkNGREVBMDBBMEFEMCI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MzZDMDcxNDgzNzI4REYxMUE0QjFDODk4QTgxRTZGNUQiIHN0RXZ0OndoZW49IjIwMTAtMDMtMDVUMTE6MDk6MTdaIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ1M0IFdpbmRvd3MiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjM3QzA3MTQ4MzcyOERGMTFBNEIxQzg5OEE4MUU2RjVEIiBzdEV2dDp3aGVuPSIyMDEwLTAzLTA1VDExOjA5OjE3WiIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENTNCBXaW5kb3dzIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+/+IMWElDQ19QUk9GSUxFAAEBAAAMSExpbm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYAMQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAEAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQAAABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAAAAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gAAAAUbWVhcwAA
+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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>4e4d8752-a361-4d14-934c-0536b2089906</rd:ReportID>
+</Report>

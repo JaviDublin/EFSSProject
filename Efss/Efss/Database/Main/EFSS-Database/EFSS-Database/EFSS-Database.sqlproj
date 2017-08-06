@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>EFSS-Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.0</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <RootNamespace>EFSS-Database</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>4.0</PreviousProjectVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34babb48-5e9c-4379-9ee1-614c43c83394}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug.publish.xml" />
+    <None Include="Release.publish.xml" />
+    <None Include="Schema Comparisons\SqlSchemaCompare-Hescrad03.scmp" />
+    <None Include="Schema Comparisons\SqlSchemaCompare-radschemareader-Hescap19.scmp" />
+    <None Include="Schema Comparisons\SqlSchemaCompare-radschemawriter-Hescap19.scmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Permissions.sql" />
+    <Build Include="dbo\Tables\WWTest_Sales_IT.sql" />
+    <Build Include="dbo\Tables\WWTest_FileReport_IT.sql" />
+    <Build Include="dbo\Tables\WSales.sql" />
+    <Build Include="dbo\Tables\VIURD240_test.sql" />
+    <Build Include="dbo\Tables\Staging.SalesOR.sql" />
+    <Build Include="dbo\Tables\Staging.SalesCN.sql" />
+    <Build Include="dbo\Tables\Staging.ManualInvoice.sql" />
+    <Build Include="dbo\Tables\Staging.Dashboard.sql" />
+    <Build Include="dbo\Tables\Staging.Buyers.sql" />
+    <Build Include="dbo\Tables\Staging.ActiveFleetYearDeletes.sql" />
+    <Build Include="dbo\Tables\Staging.ActiveFleetYearAdds.sql" />
+    <Build Include="dbo\Tables\Staging.ActiveFleetMonthDeletes.sql" />
+    <Build Include="dbo\Tables\Staging.ActiveFleetMonthAdds.sql" />
+    <Build Include="dbo\Tables\Staging.ActiveFleetMonth.sql" />
+    <Build Include="dbo\Tables\Staging.ActiveFleetDay.sql" />
+    <Build Include="dbo\Tables\SPInvoices.sql" />
+    <Build Include="dbo\Tables\Migration.Spain.sql" />
+    <Build Include="dbo\Tables\Migration.Italy.sql" />
+    <Build Include="dbo\Tables\Migration.Germany.sql" />
+    <Build Include="dbo\Tables\Import.WrongSales.sql" />
+    <Build Include="dbo\Tables\Import.TaxFileSP.sql" />
+    <Build Include="dbo\Tables\Import.SalesOR.sql" />
+    <Build Include="dbo\Tables\Import.SalesCN.sql" />
+    <Build Include="dbo\Tables\Import.Models.sql" />
+    <Build Include="dbo\Tables\Import.ManualInvoice.sql" />
+    <Build Include="dbo\Tables\Import.FleetSP.sql" />
+    <Build Include="dbo\Tables\Import.Dashboard.sql" />
+    <Build Include="dbo\Tables\Import.BuyersVNDL.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetYearDels.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetYearADReport.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetYearAdds.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetReport.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetMonthReport.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetMonthDels.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetMonthADReportPivot.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetMonthADReport.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetMonthAdds.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetMonth.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetDayReport.sql" />
+    <Build Include="dbo\Tables\Import.ActiveFleetDay.sql" />
+    <Build Include="dbo\Tables\GEVendors.sql" />
+    <Build Include="dbo\Tables\GESLE_His_FleetCo_Duplicates.sql" />
+    <Build Include="dbo\Tables\GESLE_His_FleetCo.sql" />
+    <Build Include="dbo\Tables\GESLE_His.sql" />
+    <Build Include="dbo\Tables\GEModels2.sql" />
+    <Build Include="dbo\Tables\GEModels.sql" />
+    <Build Include="dbo\Tables\GEManufacturer.sql" />
+    <Build Include="dbo\Tables\GEFleetHistory.sql" />
+    <Build Include="dbo\Tables\GEFleet.sql" />
+    <Build Include="dbo\Tables\FLOTA_HISTORICO.sql" />
+    <Build Include="dbo\Tables\FLOTA_DATOS.sql" />
+    <Build Include="dbo\Tables\FLOTA.sql" />
+    <Build Include="dbo\Tables\Fact.VehiclesExtraCharges.sql" />
+    <Build Include="dbo\Tables\Fact.Vehicles.sql" />
+    <Build Include="dbo\Tables\Fact.Items.sql" />
+    <Build Include="dbo\Tables\Fact.FleetTaxReport.sql" />
+    <Build Include="dbo\Tables\Fact.FleetSP.sql" />
+    <Build Include="dbo\Tables\Fact.FleetCashTargetDay.sql" />
+    <Build Include="dbo\Tables\Fact.FleetCashTarget.sql" />
+    <Build Include="dbo\Tables\Fact.FileReport.sql" />
+    <Build Include="dbo\Tables\Fact.Documents.sql" />
+    <Build Include="dbo\Tables\Fact.DocumentItems.sql" />
+    <Build Include="dbo\Tables\Fact.Descriptions.sql" />
+    <Build Include="dbo\Tables\Fact.DashboardReportBuyers.sql" />
+    <Build Include="dbo\Tables\Fact.DashboardReport.sql" />
+    <Build Include="dbo\Tables\Fact.BuyersManufacturer.sql" />
+    <Build Include="dbo\Tables\Fact.BuyersContact.sql" />
+    <Build Include="dbo\Tables\Fact.BuyersAddress.sql" />
+    <Build Include="dbo\Tables\Fact.BuyerExceptions.sql" />
+    <Build Include="dbo\Tables\EMPRESA.sql" />
+    <Build Include="dbo\Tables\Dimension.VehicleType.sql" />
+    <Build Include="dbo\Tables\Dimension.VehicleStatus.sql" />
+    <Build Include="dbo\Tables\Dimension.VehicleClass.sql" />
+    <Build Include="dbo\Tables\Dimension.VatValues.sql" />
+    <Build Include="dbo\Tables\Dimension.TaxCodes.sql" />
+    <Build Include="dbo\Tables\Dimension.SaleType.sql" />
+    <Build Include="dbo\Tables\Dimension.ReportTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.Regions.sql" />
+    <Build Include="dbo\Tables\Dimension.ReceivableTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.Models.sql" />
+    <Build Include="dbo\Tables\Dimension.ModelDetails.sql" />
+    <Build Include="dbo\Tables\Dimension.ModelCodes.sql" />
+    <Build Include="dbo\Tables\Dimension.ManufacturerVision.sql" />
+    <Build Include="dbo\Tables\Dimension.Manufacturer.sql" />
+    <Build Include="dbo\Tables\Dimension.DocumentTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.DocumentActionTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.DescriptionTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.Currencies.sql" />
+    <Build Include="dbo\Tables\Dimension.Countries.sql" />
+    <Build Include="dbo\Tables\Dimension.ContactTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.CompanyTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.CompanyMessages.sql" />
+    <Build Include="dbo\Tables\Dimension.CompanyAddress.sql" />
+    <Build Include="dbo\Tables\Dimension.Companies.sql" />
+    <Build Include="dbo\Tables\Dimension.BuyerTypes.sql" />
+    <Build Include="dbo\Tables\Dimension.BuyersRate.sql" />
+    <Build Include="dbo\Tables\Dimension.Buyers.sql" />
+    <Build Include="dbo\Tables\Dimension.Areas.sql" />
+    <Build Include="dbo\Tables\Controls.sql" />
+    <Build Include="dbo\Tables\Archive.SalesErrors.sql" />
+    <Build Include="dbo\Tables\Archive.Sales.sql" />
+    <Build Include="dbo\Tables\Archive.ManualInvoice.sql" />
+    <Build Include="dbo\Tables\Archive.Dashboard.sql" />
+    <Build Include="dbo\Tables\Application.Users.sql" />
+    <Build Include="dbo\Tables\Application.UserRoles.sql" />
+    <Build Include="dbo\Tables\Application.UserCountries.sql" />
+    <Build Include="dbo\Tables\Application.Roles.sql" />
+    <Build Include="dbo\Tables\Application.RoleControls.sql" />
+    <Build Include="dbo\Tables\Application.Permissions.sql" />
+    <Build Include="dbo\Tables\Application.Log.sql" />
+    <Build Include="dbo\Tables\Application.Files.sql" />
+    <Build Include="dbo\Tables\Application.FileLogError.sql" />
+    <Build Include="dbo\Tables\Application.FileLog.sql" />
+    <Build Include="dbo\Tables\Application.DateYears.sql" />
+    <Build Include="dbo\Tables\Application.DateWeeks.sql" />
+    <Build Include="dbo\Tables\Application.DateMonths.sql" />
+    <Build Include="dbo\Tables\Application.Controls.sql" />
+    <Build Include="dbo\Views\ViewUsers.sql" />
+    <Build Include="dbo\Views\ViewManufacturers.sql" />
+    <Build Include="dbo\Views\ViewCompanies.sql" />
+    <Build Include="dbo\Views\ViewBuyers.sql" />
+    <Build Include="dbo\Views\ViewBuyerContact.sql" />
+    <Build Include="dbo\Views\ViewBuyerAddress.sql" />
+    <Build Include="dbo\Functions\GermanMoneyFormat.sql" />
+    <Build Include="dbo\Functions\FileExists.sql" />
+    <Build Include="dbo\Functions\fnSalesSummaryByCountry.sql" />
+    <Build Include="dbo\Functions\fnSalesInvoiceDateByCountry.sql" />
+    <Build Include="dbo\Functions\fnSalesFileByDate.sql" />
+    <Build Include="dbo\Functions\fnSalesFileByCountry.sql" />
+    <Build Include="dbo\Functions\fnModelsByManufacturer.sql" />
+    <Build Include="dbo\Functions\fnListViewSalesCountry.sql" />
+    <Build Include="dbo\Functions\fnListViewSalesBuyers.sql" />
+    <Build Include="dbo\Functions\fnFleetMonthReport.sql" />
+    <Build Include="dbo\Functions\fnCheckDuplicateDocuments.sql" />
+    <Build Include="dbo\Functions\fnBuyersByCountryAndManufacturer.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersUpdateLastLoggedIn.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersUpdateLastActivity.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersUpdateIsLoggedIn.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersSelectOnlineCount.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersOverViewSelectById.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersOverviewSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersInsert.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersGetRole.sql" />
+    <Build Include="dbo\Stored Procedures\spUsersCheck.sql" />
+    <Build Include="dbo\Stored Procedures\spUserDetailsByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileNRCOutput.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileNRCBankTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileNRCBankParse.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileNRCBankImport.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileNRCBank.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileAEATOutput.sql" />
+    <Build Include="dbo\Stored Procedures\spSecurityUsersSelectPermissions.sql" />
+    <Build Include="dbo\Stored Procedures\spSecurityUsersSelectDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spSecurityUsersAuthenticate.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesSearchEngineToExcelByDocItemId.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesSearchEngineToExcelByBuyer.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesSearchEngineToExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesSearchEngine.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesReportSerialToPDF.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesReportFileToPDF.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesReportFileToExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFUK.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFSZ.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFSP.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFNETransport.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFNE.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFManual.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFIT.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFGE.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFFR.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesPDFBELU.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesOverviewChartRegion.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesOverviewChart.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesOverViewByFileDateAndCountry.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesOverViewByFileDate.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesOverViewByBuyerId.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesGetMaxDateLogFile.sql" />
+    <Build Include="dbo\Stored Procedures\spSalesFileOverViewSelectByFileDate.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsTaxFileSpainSelectBuyers.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsTaxFileSpainSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsTaxFileSpainPricesById.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsTaxFileSpainPrices.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsLTSCFileFrance.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsGetMaxDateTaxFileReport.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetsUpdateDay.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetsUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetsSettingsLast.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetsSelectTotal.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetsSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetsCreateReport.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsFleetCashTargetExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsDashboardUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsDashboardToExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsDashboardTextFileToExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsDashboardSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spReportsDashboardListing.sql" />
+    <Build Include="dbo\Stored Procedures\spModelsOverViewSelectFiltered.sql" />
+    <Build Include="dbo\Stored Procedures\spModelsoverViewSelectByManufacturer.sql" />
+    <Build Include="dbo\Stored Procedures\spModelsOverViewExportToExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturersSelectById.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturersSelectByCompanyId.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturersSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturersDashBoardByCompanyId.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturersBuyersByCountryId.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturerOverViewSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spManufacturerCodeByCountryId.sql" />
+    <Build Include="dbo\Stored Procedures\spInvoicesSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spImportFileFixTool.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectTransactionMileage.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectTransactionManufacturer.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectTransactionInServiceDate.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectTransactionBuyerName.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectMonthById.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectMonth.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetOverViewSelectDay.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetYearADChart.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportYearADMFG.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportYearAD.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportMonthADMFG.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportMonthAD.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportMonth.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportDayChartRegion.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportDayChart.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetReportDay.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetImportFileActiveFleetMonthADChart.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetGetMaxYearMonthReport.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetGetMaxYearDayAddReport.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetGetMaxMonthMonthReport.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetGetMaxMonthDayAddReport.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetGetMaxDateFleetDayReport.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetExportToExcel.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetChartActiveFleetDay.sql" />
+    <Build Include="dbo\Stored Procedures\spFleetActiveFleetTransTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDocumentTypesUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spDocumentTypesSelectDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spDocumentTypesInsert.sql" />
+    <Build Include="dbo\Stored Procedures\spDocumentTypesCheckName.sql" />
+    <Build Include="dbo\Stored Procedures\spDocumentsTypeSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spDocumentsSubTypeSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceSelectTax.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceSelectBuyerManufacturer.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceSelectBuyerAddress.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceSelectBuyer.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceOverView.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceJournal.sql" />
+    <Build Include="dbo\Stored Procedures\spDBManualInvoiceInsert.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSPFleetTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSPFleetTransfer.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSPFleetParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSPFleet.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesTransfer.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesReportTax.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesReportFile.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesParseModels.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesParseBuyers.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesParseBusinessRules.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesIsReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesCNUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesCNTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesCNTransfer.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesCNReportFile.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSalesCNParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportSales.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportModelsupload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportModelsTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportModelsParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetYearDelsReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetYearDelsParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetYearAddsReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetYearAddsParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetDayDelsReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetDayDelsParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetDayAddsReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetDayAddsParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportFleetDayAddsDelsReportFix.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportDashboardUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportDashboardTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportDashboardReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportDashboardParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportBuyersUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportBuyersTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportBuyersParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetTransactionsUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetTransactionsTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetMonthUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetMonthTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetMonthReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetMonthParse.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetDayUpload.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetDayTruncate.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetDayReport.sql" />
+    <Build Include="dbo\Stored Procedures\spDBImportActiveFleetDayParse.sql" />
+    <Build Include="dbo\Stored Procedures\spCurrenciesUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spCurrenciesSelectDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spCurrenciesSelectCode.sql" />
+    <Build Include="dbo\Stored Procedures\spCountriesUserSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spCountriesSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spCountriesIdSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesSelectType.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesSelectGroupName.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesSelectGroupId.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesSelectEmailId.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesSelectDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesOverViewSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesIdSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesEmailsView.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesEmailsUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesEmailsMessageView.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesCountrySelect_Search.sql" />
+    <Build Include="dbo\Stored Procedures\spCompaniesCountrySelect.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersUpdateContact.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersUpdateBuyerType.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersTypeSelect.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectNameListing.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectName.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectManufacturersById.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectDetailsByCode.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectContactsById.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectCompanyType.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersSelectAddressById.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersOverView.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersImportFile.sql" />
+    <Build Include="dbo\Stored Procedures\spBuyersDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spApplicationControlsSelect.sql" />
+    <Build Include="dbo\Stored Procedures\proc_Controls_MenuSelect.sql" />
+    <Build Include="dbo\Stored Procedures\proc_Controls_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\proc_Controls_CleanUp.sql" />
+    <Build Include="dbo\Stored Procedures\spTaxFileAEATOutput_Old.sql" />
+  </ItemGroup>
+</Project>

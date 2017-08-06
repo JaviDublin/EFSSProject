@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "EFSS-Reports", "EFSS-Reports\EFSS-Reports.rptproj", "{5BE3651E-64B1-49E7-AED9-516EB17AE703}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://hescrad01:8080/tfs/radteamcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EFSS-Reports\\EFSS-Reports.rptproj
+		SccProjectName1 = EFSS-Reports
+		SccLocalPath1 = EFSS-Reports
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BE3651E-64B1-49E7-AED9-516EB17AE703}.Debug|Default.ActiveCfg = Debug
+		{5BE3651E-64B1-49E7-AED9-516EB17AE703}.Debug|Default.Build.0 = DebugLocal
+		{5BE3651E-64B1-49E7-AED9-516EB17AE703}.Debug|Default.Deploy.0 = DebugLocal
+		{5BE3651E-64B1-49E7-AED9-516EB17AE703}.Release|Default.ActiveCfg = Release
+		{5BE3651E-64B1-49E7-AED9-516EB17AE703}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

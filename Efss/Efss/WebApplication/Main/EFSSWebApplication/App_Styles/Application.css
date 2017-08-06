@@ -1,0 +1,18 @@
+﻿*
+{
+    margin:0;
+    padding:0
+}
+html,body,form
+{
+    height:100%;
+    background:#fffbe6;
+}
+
+body
+{
+    font-family:Arial,Tahoma,sans-serif;
+    font-size:12px;background-position:left top;
+    background-image:url(../App_Styles/Images/header-bg.gif);
+    background-repeat:repeat-x
+}
